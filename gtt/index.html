@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTT 查询</title>
+    <style>
+        ul.stops li {list-style: none;}
+        body {font-size: 150%;}
+        input#cerca {font-size:100%;background-color:black;color:white;text-transform:uppercase;margin-top:20px;}
+        .stops li {margin-bottom:10px;margin-top:10px;}
+    </style>
+</head>
+<body>
+    <h1>GTT 查询</h1>
+
+    <form method="post" action="http://gttweb.5t.torino.it/gtt/trasporto/arrivi-ricerca.jsp">
+        <h2>Please choose one:</h2>
+        <h3>Racconigi 30ter 周边</h3>
+        <ul class="stops">
+            <li>
+                <input name="shortName" type="radio" value="1521" id="f1521">
+                <label for="f1521">55 路车站，Corso Peschiera 方向（1521）</label>
+            </li>
+            <li>
+                <input name="shortName" type="radio" value="3211" id="f3211">
+                <label for="f3211">55 路车站，Vittorio Emanuele II 方向（3211）</label>
+            </li>
+            <li>
+                <input name="shortName" type="radio" value="1520" id="f1520">
+                <label for="f1520">68 路车站，往学校方向（1520）</label>
+            </li>
+            <li>
+                <input name="shortName" type="radio" value="2094" id="f2094">
+                <label for="f2094">68 路车站，Trapani 方向（2094）</label>
+            </li>
+        </ul>
+        <h3>Corso Peschiera 周边</h3>
+        <ul class="stops">
+            <li>
+                <input name="shortName" type="radio" value="3210" id="f3210">
+                <label for="f3210">55 路车站，Corso Peschiera 方向（3210）</label>
+            </li>
+            <li>
+                <input name="shortName" type="radio" value="875" id="f875">
+                <label for="f875">42、33 路车站，往 Sabotino 方向（875）</label>
+            </li>
+        </ul>
+        <h3>Corso Trapani</h3>
+        <ul class="stops">
+            <li>
+                <input name="shortName" type="radio" value="120" id="f120">
+                <label for="f120">2 路车站，Monginevro 方向（120）</label>
+            </li>
+            <li>
+                <input name="shortName" type="radio" value="119" id="f119">
+                <label for="f119">2 路车站，Piazza Rivoli 方向（119）</label>
+            </li>
+        </ul>
+        <p>
+            <input name="stoppingPointCtl:getTransits" type="submit" value="cerca" title="cerca" id="cerca"/>
+        </p>
+    </form>
+
+</body>
+</html>
