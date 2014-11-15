@@ -1,4 +1,4 @@
-yuz.me
-======
+# YUZ.ME
 
-YU Zijie's personal website.
+This is YU Zijie's personal website.
+A personal blog about health and lifestyle.
