@@ -10,8 +10,8 @@ relative_permalinks: true
 
 # Setup
 title:               YUZ.ME
-tagline:             'A Few Words About Everything.'
-description:         'This is a personal website, written with ♥ by YU Zijie.'
+tagline:             'excited about the unknown.'
+description:         'Hi, there! Thank you for your visit. This is a personal website written with ♥ by YU Zijie (于子杰).'
 url:                 http://yuz.me
 baseurl:             /
 paginate:            1
