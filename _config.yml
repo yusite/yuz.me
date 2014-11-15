@@ -10,7 +10,7 @@ relative_permalinks: true
 
 # Setup
 title:               YUZ.ME
-tagline:             'A few words about everything.'
+tagline:             'a few words about everything.'
 description:         'This is a personal website, written with ♥ by YU Zijie.'
 url:                 http://yuz.me
 baseurl:             /
