@@ -18,9 +18,9 @@ paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              YU Zijie
+  url:               http://yuz.me
+  email:             feedback@yuz.me
 
 # Custom vars
 version:             1.0.0
