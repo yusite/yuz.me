@@ -14,7 +14,7 @@ tagline:             'A few words about everything.'
 description:         'This is a personal website, written with <3 by YU Zijie.'
 url:                 http://yuz.me
 baseurl:             /
-paginate:            3
+paginate:            1
 
 # About/contact
 author:
