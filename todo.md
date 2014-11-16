@@ -1,6 +1,6 @@
 ---
 layout: page
-title: To do list
+title: ToDo List
 
 ---
 
