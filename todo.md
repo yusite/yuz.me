@@ -14,4 +14,5 @@ title: ToDo List
 * 修该 List of Articles 排版 (the week after next week)
 * 添加底边栏
 * 修改页面底部的 Navigation
-* 修改 About me 页面
+* 修改 About me 页面，加入自己的简历
+* 做一个类似于[这样](http://themes.array.is/camera/2014/09/21/yosemite-national-park/)的 image gallery
