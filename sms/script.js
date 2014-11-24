@@ -16,6 +16,9 @@ for ( i = 0; i < x.length; i++ ) {
     tmp += "</a>";
     tmp += "</h3>";
     tmp += "<p>";
+    tmp += x[i].getAttribute('readable_date');
+    tmp += "</p>";
+    tmp += "<p>";
     tmp += x[i].getAttribute('body');
     tmp += "</p>";
     $( tmp ).appendTo( ".sms" );
