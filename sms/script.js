@@ -9,7 +9,7 @@ for ( i = 0; i < x.length; i++ ) {
     var pb = "<p>";
     var pe = "</p>";
     tmp = "<h3>";
-    tmp += "<a href=\"sms://";
+    tmp += "<a href=\"sms:";
     tmp += x[i].getAttribute('address');
     tmp += "\">";
     tmp += x[i].getAttribute('address');
