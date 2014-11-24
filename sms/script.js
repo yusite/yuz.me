@@ -8,13 +8,13 @@ for ( i = 0; i < x.length; i++ ) {
     var tmp = "";
     var pb = "<p>";
     var pe = "</p>";
-    tmp = "<h3>";
+    tmp = "<h2>";
     tmp += "<a href=\"sms:";
     tmp += x[i].getAttribute('address');
     tmp += "\">";
     tmp += x[i].getAttribute('address');
     tmp += "</a>";
-    tmp += "</h3>";
+    tmp += "</h2>";
     tmp += "<p>";
     tmp += x[i].getAttribute('readable_date');
     tmp += "</p>";
