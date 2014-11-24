@@ -3,27 +3,66 @@ xmlhttp.open("GET","sms.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 var x=xmlDoc.getElementsByTagName("sms");
-var phone_number = "";
+var people = [];
 
-for ( i = 0; i < x.length; i++ ) {
-    var tmp = "";
-    var address = x[i].getAttribute('address');
-    if ( phone_number !== address ) {
-        tmp += "<h2>";
-        tmp += "<a href=\"sms:";
-        tmp += x[i].getAttribute('address');
-        tmp += "\">";
-        tmp += x[i].getAttribute('address');
-        tmp += "</a>";
-        tmp += "</h2>";
-        phone_number = address;
+function person() {
+    this.address = "";
+    this.messages = [];
+    this.times = [];
+}
+
+function searchPeople (array, term) {
+    var index = -1;
+    for (var i =0; i < array.length; i++ ) {
+        if (array[i].address === term) {
+            index = i;
+            break;
+        }
     }
-    tmp += "<p>";
-    tmp += x[i].getAttribute('readable_date');
-    tmp += "</p>";
-    tmp += "<p>";
-    tmp += x[i].getAttribute('body');
-    tmp += "</p>";
-    tmp += "<hr>";
-    $( tmp ).appendTo( ".sms" );
+    return index;
+}
+
+for ( var i = 0; i < x.length; i++ ) {
+    var n = x[i].getAttribute('address');
+    var t = x[i].getAttribute('readable_date');
+    var b = x[i].getAttribute('body');
+    var index = searchPeople(people, n);
+    if (index === -1) {
+        var newPerson = new person();
+        newPerson.address = n;
+        newPerson.messages.push(b);
+        newPerson.times.push(t);
+        people.push(newPerson);
+    } else {
+        people[index].times.push(t);
+        people[index].messages.push(b);
+    }
+}
+
+for ( var i = 0; i < people.length; i++ ) {
+    var phoneNumber = people[i].address;
+    var recTimes = people[i].times;
+    var recMessages = people[i].messages;
+    var number = i + 1;
+
+    var output = "<h1>";
+    output += number;
+    output += ". ";
+    output += "<a href=\"sms:";
+    output += phoneNumber;
+    output += "\">";
+    output += phoneNumber;
+    output += "</a>";
+    output += "</h1>";
+
+    for (var j = 0; j < recTimes.length; j++) {
+        output += "<p><strong>";
+        output += recTimes[j];
+        output += "</strong><br>";
+        output += recMessages[j];
+        output += "</p>";
+        output += "<hr>";
+    }
+
+    $(output).appendTo(".sms");
 }
