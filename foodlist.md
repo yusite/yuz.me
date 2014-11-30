@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Food List
+script: /javascript/foodlist.js
 
 ---
 
 <div id="foodlist"></div>
-<script type="text/javascript" src="/javascript/foodlist.js">
-</script>
