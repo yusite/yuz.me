@@ -5,4 +5,6 @@ script: /javascript/foodlist.js
 
 ---
 
-<div id="foodlist"></div>
+<div id="foodlist">
+    <img src="/public/loading.gif" alt="Loading..." class="loading">
+</div>
