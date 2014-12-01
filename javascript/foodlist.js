@@ -39,7 +39,7 @@ var createOutput = function( jsonobject ) {
                 output += eatDates[j];
                 output += ' 天前吃过';
             } else {
-                output += '，已多天没碰过';
+                output += '，已多天没吃过';
             }
             if (buyDates[j] === 0) {
                 output += '，刚刚购买';
