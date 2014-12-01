@@ -25,11 +25,29 @@ var createOutput = function( jsonobject ) {
         output += '<ul>';
         var names = jsonobject[i].names;
         var numbers = jsonobject[i].numbers;
+        var buyDates = jsonobject[i].buyDates;
+        var eatDates = jsonobject[i].eatDates;
         for (var j = 0; j < names.length; j++) {
             output += '<li>';
             output += names[j];
             output += '：';
             output += numbers[j];
+            if (eatDates[j] === 0) {
+                output += '，刚刚吃过';
+            } else if (eatDates[j] != "N/A") {
+                output += '，已 ';
+                output += eatDates[j];
+                output += ' 天没碰过';
+            } else {
+                output += '，已多天没碰过';
+            }
+            if (buyDates[j] === 0) {
+                output += '，刚刚购买';
+            } else if (buyDates[j] != "N/A") {
+                output += '，上次购买：';
+                output += buyDates[j];
+                output += ' 天前';
+            }
             output += '</li>';
         }
         output += '</ul>';
