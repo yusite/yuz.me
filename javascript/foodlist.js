@@ -8,41 +8,26 @@
     });
 
     var createOutput = function( jsonobject ) {
-        var output = '';
+        var output = [];
         for (var i in jsonobject) {
-            output += '<h3>';
-            output += i;
-            output += '</h3>';
-            output += '<ul>';
+            output.push("<h3>" + i + "</h3>");
+            output.push("<table><tbody>");
+            output.push("<tr class=\"head\"><td>名字</td><td>数量</td><td>上次吃</td><td>购买时间</td></tr>");
             var names = jsonobject[i].names;
             var numbers = jsonobject[i].numbers;
             var buyDates = jsonobject[i].buyDates;
             var eatDates = jsonobject[i].eatDates;
             for (var j = 0; j < names.length; j++) {
-                output += '<li>';
-                output += names[j];
-                output += '：';
-                output += numbers[j];
-                if (eatDates[j] === 0) {
-                    output += '，刚刚吃过';
-                } else if (eatDates[j] != "N/A") {
-                    output += '，';
-                    output += eatDates[j];
-                    output += ' 天前吃过';
-                } else {
-                    output += '，已多天没吃过';
-                }
-                if (buyDates[j] === 0) {
-                    output += '，刚刚购买';
-                } else if (buyDates[j] != "N/A") {
-                    output += '，上次购买：';
-                    output += buyDates[j];
-                    output += ' 天前';
-                }
-                output += '</li>';
+                output.push("<tr>");
+                output.push("<td>" + names[j] + "</td>");
+                output.push("<td>" + numbers[j] + "</td>");
+                output.push("<td>" + eatDates[j] + " 天前</td>");
+                output.push("<td>" + buyDates[j] + " 天前</td>");
+                output.push("</tr>");
             }
-            output += '</ul>';
+            output.push("</tbody></table>");
         }
-        return output;
+        var outputString = output.join("");
+        return outputString;
     };
 })();
