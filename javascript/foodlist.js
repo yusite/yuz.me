@@ -35,9 +35,9 @@ var createOutput = function( jsonobject ) {
             if (eatDates[j] === 0) {
                 output += '，刚刚吃过';
             } else if (eatDates[j] != "N/A") {
-                output += '，已 ';
+                output += '，';
                 output += eatDates[j];
-                output += ' 天没碰过';
+                output += ' 天前吃过';
             } else {
                 output += '，已多天没碰过';
             }
