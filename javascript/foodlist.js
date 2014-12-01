@@ -9,8 +9,10 @@
 
     var createOutput = function( jsonobject ) {
         var output = [];
+        var id = 0;
         for (var i in jsonobject) {
-            output.push("<h3>" + i + "</h3>");
+            output.push("<h3 id=\"" + id + "\">" + i + "</h3>");
+            id++;
             output.push("<table><tbody>");
             output.push("<tr class=\"head\"><td>名字</td><td>数量</td><td>上次吃</td><td>上次购买</td></tr>");
             var names = jsonobject[i].names;
