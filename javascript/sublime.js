@@ -29,10 +29,10 @@
                         output.push("<td><a href=\"");
                         output.push(i_object.url[n]);
                         output.push("\" target=\"_blank\">" + i_object[t][n] + "</a></td>");
-                    } else if (t === 'settings') {
+                    } else if (t === 'settings' && i_object[t][n] !== "") {
                         output.push("<td><a href=\"");
                         output.push(i_object.url_settings[n]);
-                        output.push("\" target=\"_blank\">" + i_object[t][n] + "</a></td>");
+                        output.push("\" target=\"_blank\">✓</a></td>");
                     } else {
                         output.push("<td>" + i_object[t][n] + "</td>");
                     }
