@@ -25,9 +25,7 @@
             output.push(marked(array[i].Content));
             if (array[i].Link){
                 l = addhttp(array[i].Link);
-                output.push("<p><a href=\"" + l + "\">");
-                output.push("链接 &rarr;");
-                output.push("</a></p>");
+                output.push("<span><a href=\"" + l + "\">" + l + "</a></span>");
             }
             output.push("</div>");
             output.push("<hr>");
