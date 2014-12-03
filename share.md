@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Text Share
+sidebar: ignore
+hideTitle: true
 script:
 - /javascript/library/marked.js
 - /javascript/custom/share.js
-
----
-
-文字分享
 
 ---
 
