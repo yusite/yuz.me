@@ -13,8 +13,10 @@
         var array = jsonarray.reverse();
         var i;
         for (i = 0; i < array.length; i++) {
+            output.push("<div id=\"share-" + i + "\">");
             output.push("<span class=\"post-date\">" + array[i].Time + "</span>");
             output.push(marked(array[i].Content));
+            output.push("</div>");
             output.push("<hr>");
         }
         var outputString = output.join("");
