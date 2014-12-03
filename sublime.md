@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sublime Text
-script: /javascript/sublime.js
+script: /javascript/custom/sublime.js
 
 ---
 

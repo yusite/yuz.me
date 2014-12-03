@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Food List
-script: /javascript/foodlist.js
+script: /javascript/custom/foodlist.js
 
 ---
 

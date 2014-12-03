@@ -3,7 +3,7 @@ layout: page
 title: Text Share
 script:
 - /javascript/library/marked.js
-- /javascript/share.js
+- /javascript/custom/share.js
 
 ---
 
