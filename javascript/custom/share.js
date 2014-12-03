@@ -20,7 +20,7 @@
         var array = jsonarray.reverse();
         var i,l;
         for (i = 0; i < array.length; i++) {
-            output.push("<div id=\"share-" + i + "\">");
+            output.push("<div id=\"share-" + i + "\" style=\"padding-top:0.5rem;\">");
             output.push("<span class=\"post-date\">" + array[i].Time + "</span>");
             output.push(marked(array[i].Content));
             if (array[i].Link){
