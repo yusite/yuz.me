@@ -8,14 +8,27 @@
         document.getElementById(idName).innerHTML = content;
     });
 
+    function addhttp(url) {
+        if (!/^(f|ht)tps?:\/\//i.test(url)) {
+            url = "http://" + url;
+        }
+        return url;
+    }
+
     var createOutput = function( jsonarray ) {
         var output = [];
         var array = jsonarray.reverse();
-        var i;
+        var i,l;
         for (i = 0; i < array.length; i++) {
             output.push("<div id=\"share-" + i + "\">");
             output.push("<span class=\"post-date\">" + array[i].Time + "</span>");
             output.push(marked(array[i].Content));
+            if (array[i].Link){
+                l = addhttp(array[i].Link);
+                output.push("<p><a href=\"" + l + "\">");
+                output.push("链接 &rarr;");
+                output.push("</a></p>");
+            }
             output.push("</div>");
             output.push("<hr>");
         }
