@@ -12,3 +12,4 @@ script:
 <div id="share">
     <img src="/public/loading.gif" alt="Loading..." class="loading">
 </div>
+<span style="font-size:smaller;float:right;"><a href="https://drive.google.com/open?id=1IALAOKl0zvjABhF6YVj1VLe_5JkzrjVtNlSLoYkADas&authuser=0">Manage Text</a><span>
