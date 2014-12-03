@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Text Share
-script: /javascript/share.js
+script:
+- /javascript/library/marked.js
+- /javascript/share.js
 
 ---
 
