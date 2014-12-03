@@ -14,7 +14,7 @@
         var i;
         for (i = 0; i < array.length; i++) {
             output.push("<span class=\"post-date\">" + array[i].Time + "</span>");
-            output.push("<p>" + array[i].Content +"</p>");
+            output.push(marked(array[i].Content));
             output.push("<hr>");
         }
         var outputString = output.join("");
