@@ -26,10 +26,10 @@
                 } else {
                     output.push("<td>" + numbers[j] + "</td>");
                 }
-                if (buyDates[j] >= 7) {
-                    output.push("<td style=\"color:orange;\">" + buyDates[j] + " 天前</td>");
-                } else if (buyDates[j] >= 14) {
+                if (buyDates[j] >= 14) {
                     output.push("<td style=\"color:red;\">" + buyDates[j] + " 天前</td>");
+                } else if (buyDates[j] >= 7) {
+                    output.push("<td style=\"color:green;\">" + buyDates[j] + " 天前</td>");
                 } else {
                     output.push("<td>" + buyDates[j] + " 天前</td>");
                 }
