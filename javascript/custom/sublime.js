@@ -15,7 +15,7 @@
             var i_object = jsonobject[i];
             var titleLength = i_object.title.length;
             output.push("<h3 id=\"" + i + "\">" + i + "</h3>");
-            output.push("<table><tbody style=\"font-size:small;\">");
+            output.push("<table><tbody style=\"font-size:smaller;\">");
             output.push("<tr class=\"head\">");
             for (n = 0; n < titleLength; n++) {
                 output.push("<td>" + i_object.title[n] + "</td>");
