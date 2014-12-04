@@ -26,7 +26,13 @@
                 } else {
                     output.push("<td>" + numbers[j] + "</td>");
                 }
-                output.push("<td>" + buyDates[j] + " 天前</td>");
+                if (buyDates[j] >= 7) {
+                    output.push("<td style=\"color:orange;\">" + buyDates[j] + " 天前</td>");
+                } else if (buyDates[j] >= 14) {
+                    output.push("<td style=\"color:red;\">" + buyDates[j] + " 天前</td>");
+                } else {
+                    output.push("<td>" + buyDates[j] + " 天前</td>");
+                }
                 output.push("</tr>");
             }
             output.push("</tbody></table>");
