@@ -21,7 +21,11 @@
             for (var j = 0; j < names.length; j++) {
                 output.push("<tr>");
                 output.push("<td>" + names[j] + "</td>");
-                output.push("<td>" + numbers[j] + "</td>");
+                if (numbers[j] === 0) {
+                    output.push("<td style=\"color:red;\">" + numbers[j] + "</td>");
+                } else {
+                    output.push("<td>" + numbers[j] + "</td>");
+                }
                 output.push("<td>" + buyDates[j] + " 天前</td>");
                 output.push("</tr>");
             }
