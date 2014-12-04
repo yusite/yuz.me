@@ -14,16 +14,14 @@
             output.push("<h3 id=\"" + id + "\">" + i + "</h3>");
             id++;
             output.push("<table><tbody>");
-            output.push("<tr class=\"head\"><td>名字</td><td>数量</td><td>上次吃</td><td>上次购买</td></tr>");
+            output.push("<tr class=\"head\"><td>食物名字</td><td>剩余数量</td><td>上次购买</td></tr>");
             var names = jsonobject[i].names;
             var numbers = jsonobject[i].numbers;
             var buyDates = jsonobject[i].buyDates;
-            var eatDates = jsonobject[i].eatDates;
             for (var j = 0; j < names.length; j++) {
                 output.push("<tr>");
                 output.push("<td>" + names[j] + "</td>");
                 output.push("<td>" + numbers[j] + "</td>");
-                output.push("<td>" + eatDates[j] + " 天前</td>");
                 output.push("<td>" + buyDates[j] + " 天前</td>");
                 output.push("</tr>");
             }
