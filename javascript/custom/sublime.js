@@ -32,7 +32,7 @@
                     } else if (t === 'conf' && i_object[t][n] !== "") {
                         output.push("<td><a href=\"");
                         output.push(i_object.url_settings[n]);
-                        output.push("\" target=\"_blank\">Yes</a></td>");
+                        output.push("\" target=\"_blank\">Link</a></td>");
                     } else {
                         output.push("<td>" + i_object[t][n] + "</td>");
                     }
