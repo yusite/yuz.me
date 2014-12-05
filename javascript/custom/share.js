@@ -39,7 +39,6 @@
     // hide text
     $(document).on("click", 'a[href="hide"]', function( event ){
         event.preventDefault();
-        var that = $(this);
         $(this).html("Closing...");
         var theDiv = $(this).parent().parent();
         var divID = theDiv.attr('id');
@@ -47,9 +46,6 @@
         $.getJSON(hideUrl).done(function(data) {
             if (data.state == "success"){
                 theDiv.slideUp();
-            } else {
-                alert("Operation failed: No such Item.");
-                that.html("Failed");
             }
         });
     });
