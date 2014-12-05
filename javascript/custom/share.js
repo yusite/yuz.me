@@ -18,7 +18,7 @@
         var output = [];
         var i,link;
         for (i = jsonarray.length - 1; i > -1; i--) {
-            output.push('<div style="padding-top:0.5rem;" id="' + i + '">');
+            output.push('<div style="padding-top:0.5rem;" id="' + jsonarray[i].Id + '">');
             output.push("<span class=\"post-date\">");
             output.push(jsonarray[i].Time);
             output.push(' <a href="hide" style="float:right;font-size:smaller;">');
@@ -39,11 +39,18 @@
     // hide text
     $(document).on("click", 'a[href="hide"]', function( event ){
         event.preventDefault();
+        var that = $(this);
+        $(this).html("Closing...");
         var theDiv = $(this).parent().parent();
         var divID = theDiv.attr('id');
-        var hideID = Number(divID) + 2;
-        var hideUrl = google + "?hide=" + hideID;
-        $.getJSON(hideUrl);
-        theDiv.slideUp();
+        var hideUrl = google + "?hide=" + divID;
+        $.getJSON(hideUrl).done(function(data) {
+            if (data.state == "success"){
+                theDiv.slideUp();
+            } else {
+                alert("Operation failed: No such Item.");
+                that.html("Failed");
+            }
+        });
     });
 })();
