@@ -14,7 +14,7 @@
             output.push("<h3 id=\"" + id + "\">" + i + "</h3>");
             id++;
             output.push("<table><tbody>");
-            output.push("<tr class=\"head\"><td>食物名字</td><td>剩余数量</td><td>上次购买</td></tr>");
+            output.push("<tr class=\"head\"><td>食物名字</td><td>剩余数量</td><td>上次添加</td></tr>");
             var names = jsonobject[i].names;
             var numbers = jsonobject[i].numbers;
             var buyDates = jsonobject[i].buyDates;
