@@ -43,9 +43,10 @@
         var theDiv = $(this).parent().parent();
         var divID = theDiv.attr('id');
         var hideUrl = google + "?hide=" + divID;
+        theDiv.slideUp();
         $.getJSON(hideUrl).done(function(data) {
             if (data.state == "success"){
-                theDiv.slideUp();
+                console.info('Operation Success');
             }
         });
     });
