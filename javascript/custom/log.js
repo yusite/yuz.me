@@ -13,8 +13,14 @@
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<input type="checkbox" name="finish" value="');
             output.push(jsonarray[i]);
+            output.push('" id="');
+            output.push(i);
+            output.push('">');
+            output.push('<label for="');
+            output.push(i);
             output.push('">');
             output.push(jsonarray[i]);
+            output.push('</label>');
             output.push(' ');
         }
         var outputString = output.join("");
