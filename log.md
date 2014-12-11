@@ -22,6 +22,14 @@ Pushing forward!
 
 <p>或者创建新任务：<input type="text" name="create" style="font-size:20px;"></p>
 
+<p>请选择一个类别：<input type="radio" id="house" name="category" value="家务">
+<label for="house">家务</label>
+<input type="radio" id ="hobby" name="category" value="个人爱好">
+<label for="hobby">个人爱好</label>
+<input type="radio" id ="work" name="category" value="工作">
+<label for="work">工作</label>
+</p>
+
 <input type="submit" value="Submit">
 
 </form>
