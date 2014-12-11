@@ -16,7 +16,7 @@
             output.push('" id="');
             output.push(i);
             output.push('">');
-            output.push('<label for="');
+            output.push(' <label for="');
             output.push(i);
             output.push('">');
             output.push(jsonarray[i]);
