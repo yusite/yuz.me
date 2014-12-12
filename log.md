@@ -58,7 +58,7 @@ Pushing forward!
 <hr>
 
 <p>
-<input type="submit" value="Submit" style="font-size:18px;float: right;margin-bottom:120px;">
+<input type="submit" value="Submit" style="font-size:18px;float: right;margin-bottom:60px;">
 </p>
 
 </form>
