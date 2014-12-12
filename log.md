@@ -57,7 +57,7 @@ Pushing forward!
 </ul>
 
 <p>
-<input type="submit" value="Submit">
+<input type="submit" value="Submit" style="font-size:22px;">
 </p>
 
 </form>
