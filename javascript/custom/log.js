@@ -11,16 +11,8 @@
     var createOutput = function( jsonarray ) {
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
-            output.push('<li><input type="checkbox" name="finish" value="');
+            output.push('<li>');
             output.push(jsonarray[i]);
-            output.push('" id="');
-            output.push(i);
-            output.push('">');
-            output.push('<label for="');
-            output.push(i);
-            output.push('">');
-            output.push(jsonarray[i]);
-            output.push('</label>');
             output.push('</li>');
         }
         var outputString = output.join("");

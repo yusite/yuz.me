@@ -14,9 +14,9 @@ Pushing forward!
 
 <ol style="list-style-type: cjk-ideographic;">
     <li>待完成任务:
-        <ul id='log' style="list-style:none;">
+        <ol id="log" style="list-style:none;">
             <li>Loading...</li>
-        </ul>
+        </ol>
     </li>
     <li>新任务:
         <ul style="list-style:none;">
