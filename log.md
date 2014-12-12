@@ -31,7 +31,7 @@ Pushing forward!
             <option value="联络朋友">联络朋友</option>
             <option value="联络家人">联络家人</option>
             <option value="学习编程">学习编程</option>
-            <option value="">取消选择</option>
+            <option value="编程">编程</option>
             </select>
             </li>
         </ul>
