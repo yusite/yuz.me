@@ -21,14 +21,11 @@ Pushing forward!
 <li>新任务:
 <ul style="list-style:none;">
 <li><input type="text" name="create" style="font-size:18px;"></li>
-<li>预设任务:
-<select name="create" style="font-size:20px;">
-<option value="统计食物">统计食物</option>
-<option value="修改网站">修改网站</option>
-<option value="洗袜子">洗袜子</option>
-<option value="收拾屋子">收拾屋子</option>
-</select>
-</li>
+<li><input type="radio" id="b1" name="create" value="统计食物"><label for="b1">预设任务：统计食物</label></li>
+<li><input type="radio" id="b2" name="create" value="修改网站"><label for="b2">预设任务：修改网站</label></li>
+<li><input type="radio" id="b3" name="create" value="洗袜子"><label for="b3">预设任务：洗袜子</label></li>
+<li><input type="radio" id="b4" name="create" value="收拾屋子"><label for="b4">预设任务：收拾屋子</label></li>
+<li><input type="radio" id="bf" name="create" value=""><label for="bf">取消</label></li>
 </ul>
 </li>
 <li>分类:
