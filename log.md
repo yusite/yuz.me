@@ -55,9 +55,9 @@ Pushing forward!
 </select>
 </li>
 </ul>
-
+<hr>
 <p>
-<input type="submit" value="Submit" style="font-size:22px;">
+<input type="submit" value="Submit" style="font-size:18px;float: right;margin-bottom:120px;">
 </p>
 
 </form>
