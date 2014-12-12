@@ -38,12 +38,12 @@ Pushing forward!
     </li>
     <li>分类:
         <ul style="list-style:none;">
-            <li><input type="checkbox" id ="a1" name="category" value="重要"><label for="a1">重要</label></li>
-            <li><input type="checkbox" id ="a2" name="category" value="个人"><label for="a2">个人</label></li>
-            <li><input type="checkbox" id ="a3" name="category" value="娱乐"><label for="a3">娱乐</label></li>
-            <li><input type="checkbox" id ="a7" name="category" value="联络"><label for="a7">联络</label></li>
-            <li><input type="checkbox" id ="a6" name="category" value="家务"><label for="a6">家务</label></li>
-            <li><input type="checkbox" id ="a4" name="category" value="运功"><label for="a4">运功</label></li>
+            <li><input type="checkbox" id ="a1" name="category" value="重要"><label for="a1">重要</label>&nbsp;
+            <input type="checkbox" id ="a6" name="category" value="家务"><label for="a6">家务</label>&nbsp;
+            <input type="checkbox" id ="a7" name="category" value="联络"><label for="a7">联络</label></li>
+            <li><input type="checkbox" id ="a2" name="category" value="个人"><label for="a2">个人</label>&nbsp;
+            <input type="checkbox" id ="a4" name="category" value="运功"><label for="a4">运功</label>&nbsp;
+            <input type="checkbox" id ="a3" name="category" value="娱乐"><label for="a3">娱乐</label></li>
             <li><input type="checkbox" id ="a5" name="category" value="休息"><label for="a5">休息</label></li>
         </ul>
     </li>
