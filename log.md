@@ -21,6 +21,14 @@ Pushing forward!
 <li>新任务:
 <ul style="list-style:none;">
 <li><input type="text" name="create" style="font-size:18px;"></li>
+<li>预设任务:
+<select name="create" style="font-size:20px;">
+<option value="统计食物">统计食物</option>
+<option value="修改网站">修改网站</option>
+<option value="洗袜子">洗袜子</option>
+<option value="收拾屋子">收拾屋子</option>
+</select>
+</li>
 </ul>
 </li>
 <li>分类:
@@ -49,7 +57,7 @@ Pushing forward!
 </ul>
 </li>
 <li>所在位置:
-<select name="location" style="font-size:22px;">
+<select name="location" style="font-size:20px;">
 <option value="Italy" selected>意大利</option>
 <option value="China">中国</option>
 </select>
