@@ -21,13 +21,19 @@ Pushing forward!
     <li>新任务:
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:18px;"></li>
-            <li><input type="radio" id="b1" name="create" value="统计食物"><label for="b1">预设任务：统计食物</label></li>
-            <li><input type="radio" id="b2" name="create" value="修改网站"><label for="b2">预设任务：修改网站</label></li>
-            <li><input type="radio" id="b3" name="create" value="清洁卫生"><label for="b3">预设任务：清洁卫生</label></li>
-            <li><input type="radio" id="b4" name="create" value="收拾屋子"><label for="b4">预设任务：收拾屋子</label></li>
-            <li><input type="radio" id="b5" name="create" value="联络朋友"><label for="b5">预设任务：联络朋友</label></li>
-            <li><input type="radio" id="b6" name="create" value="联络家人"><label for="b6">预设任务：联络家人</label></li>
-            <li><input type="radio" id="bf" name="create" value=""><label for="bf">取消</label></li>
+            <li>预设任务：
+            <select name="create" style="font-size:18px;">
+            <option selected hidden value='取消'>请选择</option>
+            <option value="统计食物">统计食物</option>
+            <option value="修改网站">修改网站</option>
+            <option value="清洁卫生">清洁卫生</option>
+            <option value="收拾屋子">收拾屋子</option>
+            <option value="联络朋友">联络朋友</option>
+            <option value="联络家人">联络家人</option>
+            <option value="学习编程">学习编程</option>
+            <option value="取消">取消</option>
+            </select>
+            </li>
         </ul>
     </li>
     <li>分类:
