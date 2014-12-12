@@ -23,7 +23,7 @@ Pushing forward!
             <li><input type="text" name="create" style="font-size:18px;"></li>
             <li>预设任务：
             <select name="create" style="font-size:18px;">
-            <option selected hidden value='取消'>请选择</option>
+            <option selected value="">请选择</option>
             <option value="统计食物">统计食物</option>
             <option value="修改网站">修改网站</option>
             <option value="清洁卫生">清洁卫生</option>
@@ -31,7 +31,7 @@ Pushing forward!
             <option value="联络朋友">联络朋友</option>
             <option value="联络家人">联络家人</option>
             <option value="学习编程">学习编程</option>
-            <option value="取消">取消</option>
+            <option value="">取消选择</option>
             </select>
             </li>
         </ul>
