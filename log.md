@@ -20,7 +20,8 @@ Pushing forward!
 </p>
 
 <p>选择完成的任务:
-<span id='log'>Loading...<span></p>
+<span id='log'>Loading...<span>
+</p>
 
 <p>或者创建新任务:
 <input type="text" name="create" style="font-size:20px;"></p>
