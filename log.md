@@ -13,12 +13,12 @@ Pushing forward!
 <form action="https://script.google.com/macros/s/AKfycbxRYZQtTQ3qBQtxU5Q1iMV9_hlgvgALyTyID42IUNfDouFsajfN/exec" method="GET">
 
 <ol style="list-style-type: cjk-ideographic;">
-    <li>任务执行中:
+    <li>任务执行中：
         <ol id="log" style="list-style:none;">
             <li>Loading...</li>
         </ol>
     </li>
-    <li>新任务:
+    <li>新任务：
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:18px;"></li>
             <li>预设任务：
@@ -41,7 +41,7 @@ Pushing forward!
             </li>
         </ul>
     </li>
-    <li>分类:
+    <li>分类：
         <ul style="list-style:none;">
             <li>
                 <input type="checkbox" id ="a1" name="category" value="该做的事"><label for="a1" style="color:Crimson;"> 该做的事</label>&nbsp;&nbsp;
@@ -61,7 +61,7 @@ Pushing forward!
             </li>
         </ul>
     </li>
-    <li>所在位置:
+    <li>所在位置：
         <select name="location" style="font-size:16px;">
         <option value="Italy" selected>意大利</option>
         <option value="China">中国</option>
