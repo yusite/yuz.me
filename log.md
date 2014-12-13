@@ -34,7 +34,7 @@ Pushing forward!
             <option value="编程任务">编程任务</option>
             </select>
             </li>
-            <li>备注：
+            <li>备注信息：
             <select name="create" style="font-size:18px;">
             <option selected value="">请选择</option>
             <option value="lynda.com">Lynda.com</option>
