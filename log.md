@@ -21,7 +21,7 @@ Pushing forward!
     <li>新建任务：
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:16px;">
-            @ <a href="http://yuz.me/d/me/log/" id="place">Loading...</a>
+            @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">Loading...</a>
             </li>
             <li>待办事项：
             <span id="todo">Loading...</span>
