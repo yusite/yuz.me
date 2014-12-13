@@ -28,9 +28,7 @@ Pushing forward!
             <option value="修改网站">修改网站</option>
             <option value="清洁卫生">清洁卫生</option>
             <option value="收拾屋子">收拾屋子</option>
-            <option value="联络朋友">联络朋友</option>
-            <option value="联络家人">联络家人</option>
-            <option value="学习编程">学习编程</option>
+            <option value="联络妈妈">联络妈妈</option>
             <option value="编程任务">编程任务</option>
             </select>
             </li>
@@ -38,6 +36,7 @@ Pushing forward!
             <select name="create" style="font-size:18px;">
             <option selected value="">请选择</option>
             <option value="lynda.com">Lynda.com</option>
+            <option value="记笔记">记笔记</option>
             </select>
             </li>
         </ul>
