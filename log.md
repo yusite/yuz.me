@@ -18,26 +18,16 @@ Pushing forward!
             <li>Loading...</li>
         </ol>
     </li>
-    <li>新任务：
+    <li>新建任务：
         <ul style="list-style:none;">
-            <li><input type="text" name="create" style="font-size:18px;"></li>
-            <li>预设任务：
-            <select name="create" style="font-size:16px;">
-            <option selected value="">请选择</option>
-            <option value="休息一下">休息一下</option>
-            <option value="统计食物">统计食物</option>
-            <option value="清洁卫生">清洁卫生</option>
-            <option value="收拾屋子">收拾屋子</option>
-            <option value="联络妈妈">联络妈妈</option>
-            <option value="编程任务">编程任务</option>
-            </select>
+            <li><input type="text" name="create" style="font-size:16px;">
+            @ <a href="http://yuz.me/d/me/log/" id="place">Loading...</a>
+            </li>
+            <li>待办事项：
+            <span id="todo">Loading...</span>
             </li>
             <li>备注信息：
-            <select name="create" style="font-size:16px;">
-            <option selected value="">请选择</option>
-            <option value="lynda.com">Lynda.com</option>
-            <option value="记笔记">记笔记</option>
-            </select>
+            <span id="other">Loading...</span>
             </li>
             <li>最近任务：
             <span id="recent">Loading...</span>
@@ -63,12 +53,6 @@ Pushing forward!
                 <input type="checkbox" id ="a8" name="category" value="休息睡觉"><label for="a8"> 休息睡觉</label>
             </li>
         </ul>
-    </li>
-    <li>所在位置：
-        <select name="location" style="font-size:16px;">
-        <option value="Italy" selected>意大利</option>
-        <option value="China">中国</option>
-        </select>
     </li>
 </ol>
 

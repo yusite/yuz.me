@@ -6,8 +6,17 @@
         var content = createDoing(data.doing);
         var idName = 'log';
         document.getElementById(idName).innerHTML = content;
-        content = createRecent(data.recent);
+        content = createSelect(data.recent);
         idName = 'recent';
+        document.getElementById(idName).innerHTML = content;
+        content = createSelect(data.other);
+        idName = 'other';
+        document.getElementById(idName).innerHTML = content;
+        content = createSelect(data.todo);
+        idName = 'todo';
+        document.getElementById(idName).innerHTML = content;
+        content = outputLocation(data.place);
+        idName = 'place';
         document.getElementById(idName).innerHTML = content;
     });
     // create doing output
@@ -30,7 +39,7 @@
         return outputString;
     };
     // create recent output
-    var createRecent = function( jsonarray ) {
+    var createSelect = function( jsonarray ) {
         var i, output = [];
         output.push('<select name="create" style="font-size:16px;">');
         output.push('<option selected value="">请选择</option>');
@@ -44,5 +53,9 @@
         output.push('</select>');
         var outputString = output.join("");
         return outputString;
+    };
+    // create location output
+    var outputLocation = function( jsonarray ) {
+        return jsonarray[0];
     };
 })();
