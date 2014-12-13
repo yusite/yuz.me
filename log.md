@@ -20,7 +20,7 @@ Pushing forward!
     </li>
     <li>新建任务：
         <ul style="list-style:none;">
-            <li><input type="text" name="create" style="font-size:16px;width:200px;">
+            <li><input type="text" name="create" style="font-size:16px;width:300px;">
             @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">Loading...</a>
             </li>
             <li>待办事项：
