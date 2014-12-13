@@ -24,8 +24,8 @@ Pushing forward!
             <li>预设任务：
             <select name="create" style="font-size:16px;">
             <option selected value="">请选择</option>
+            <option value="休息一下">休息一下</option>
             <option value="统计食物">统计食物</option>
-            <option value="修改网站">修改网站</option>
             <option value="清洁卫生">清洁卫生</option>
             <option value="收拾屋子">收拾屋子</option>
             <option value="联络妈妈">联络妈妈</option>
