@@ -31,20 +31,29 @@ Pushing forward!
             <option value="联络朋友">联络朋友</option>
             <option value="联络家人">联络家人</option>
             <option value="学习编程">学习编程</option>
-            <option value="编程">编程</option>
+            <option value="编程任务">编程任务</option>
             </select>
             </li>
         </ul>
     </li>
     <li>分类:
         <ul style="list-style:none;">
-            <li><input type="checkbox" id ="a1" name="category" value="工作"><label for="a1"> 工作</label>&nbsp;
-            <input type="checkbox" id ="a6" name="category" value="家务"><label for="a6"> 家务</label>&nbsp;
-            <input type="checkbox" id ="a7" name="category" value="联络"><label for="a7"> 联络</label></li>
-            <li><input type="checkbox" id ="a2" name="category" value="个人"><label for="a2"> 个人</label>&nbsp;
-            <input type="checkbox" id ="a4" name="category" value="运功"><label for="a4"> 运功</label>&nbsp;
-            <input type="checkbox" id ="a3" name="category" value="娱乐"><label for="a3"> 娱乐</label></li>
-            <li><input type="checkbox" id ="a5" name="category" value="休息"><label for="a5"> 休息</label></li>
+            <li>
+                <input type="checkbox" id ="a1" name="category" value="该做的事"><label for="a1" style="color:Crimson;"> 该做的事</label>&nbsp;&nbsp;
+                <input type="checkbox" id ="a2" name="category" value="个人爱好"><label for="a2"> 个人爱好</label>
+            </li>
+            <li>
+                <input type="checkbox" id ="a3" name="category" value="家务劳动"><label for="a3"> 家务劳动</label>&nbsp;&nbsp;
+                <input type="checkbox" id ="a4" name="category" value="保持联络"><label for="a4"> 保持联络</label>
+            </li>
+            <li>
+                <input type="checkbox" id ="a5" name="category" value="运功健身"><label for="a5"> 运功健身</label>&nbsp;&nbsp;
+                <input type="checkbox" id ="a6" name="category" value="娱乐休闲"><label for="a6"> 娱乐休闲</label>
+            </li>
+            <li>
+                <input type="checkbox" id ="a7" name="category" value="日常起居"><label for="a7"> 日常起居</label>&nbsp;&nbsp;
+                <input type="checkbox" id ="a8" name="category" value="休息睡觉"><label for="a8"> 休息睡觉</label>
+            </li>
         </ul>
     </li>
     <li>所在位置:
