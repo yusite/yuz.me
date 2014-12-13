@@ -3,12 +3,15 @@
     var displayUrl = google + "?display=?";
     // output text
     $.getJSON(displayUrl).done(function(data) {
-        var content = createOutput(data);
+        var content = createDoing(data.doing);
         var idName = 'log';
         document.getElementById(idName).innerHTML = content;
+        content = createRecent(data.recent);
+        idName = 'recent';
+        document.getElementById(idName).innerHTML = content;
     });
-    // create output
-    var createOutput = function( jsonarray ) {
+    // create doing output
+    var createDoing = function( jsonarray ) {
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<li><input type="checkbox" name="preserve" value="');
@@ -23,6 +26,22 @@
             output.push('</label>');
             output.push('</li>');
         }
+        var outputString = output.join("");
+        return outputString;
+    };
+    // create recent output
+    var createRecent = function( jsonarray ) {
+        var i, output = [];
+        output.push('<select name="create" style="font-size:16px;">');
+        output.push('<option selected value="">请选择</option>');
+        for (i = 0; i < jsonarray.length; i++) {
+            output.push('<option value="');
+            output.push(jsonarray[i]);
+            output.push('">');
+            output.push(jsonarray[i]);
+            output.push('</option>');
+        }
+        output.push('</select>');
         var outputString = output.join("");
         return outputString;
     };

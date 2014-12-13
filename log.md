@@ -39,6 +39,9 @@ Pushing forward!
             <option value="记笔记">记笔记</option>
             </select>
             </li>
+            <li>最近任务：
+            <span id="recent">Loading...</span>
+            </li>
         </ul>
     </li>
     <li>分类：
