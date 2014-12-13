@@ -9,9 +9,6 @@
         content = createSelect(data.recent);
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.other);
-        idName = 'other';
-        document.getElementById(idName).innerHTML = content;
         content = createSelect(data.todo);
         idName = 'todo';
         document.getElementById(idName).innerHTML = content;

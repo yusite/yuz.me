@@ -26,8 +26,6 @@ Pushing forward!
             <li>待办事项：
             <span id="todo">Loading...</span>
             </li>
-            <li>备注信息：
-            <span id="other">Loading...</span>
             </li>
             <li>最近任务：
             <span id="recent">Loading...</span>
