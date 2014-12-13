@@ -44,7 +44,7 @@ Pushing forward!
             </li>
             <li>
                 <input type="checkbox" id ="a3" name="category" value="家务劳动"><label for="a3"> 家务劳动</label>&nbsp;&nbsp;
-                <input type="checkbox" id ="a4" name="category" value="保持联络"><label for="a4"> 保持联络</label>
+                <input type="checkbox" id ="a4" name="category" value="保持联络"><label for="a4"> 关系维持</label>
             </li>
             <li>
                 <input type="checkbox" id ="a5" name="category" value="运功健身"><label for="a5"> 运功健身</label>&nbsp;&nbsp;
