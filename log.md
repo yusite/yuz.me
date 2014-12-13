@@ -22,7 +22,7 @@ Pushing forward!
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:18px;"></li>
             <li>预设任务：
-            <select name="create" style="font-size:18px;">
+            <select name="create" style="font-size:16px;">
             <option selected value="">请选择</option>
             <option value="统计食物">统计食物</option>
             <option value="修改网站">修改网站</option>
@@ -33,7 +33,7 @@ Pushing forward!
             </select>
             </li>
             <li>备注信息：
-            <select name="create" style="font-size:18px;">
+            <select name="create" style="font-size:16px;">
             <option selected value="">请选择</option>
             <option value="lynda.com">Lynda.com</option>
             <option value="记笔记">记笔记</option>
@@ -62,7 +62,7 @@ Pushing forward!
         </ul>
     </li>
     <li>所在位置:
-        <select name="location" style="font-size:18px;">
+        <select name="location" style="font-size:16px;">
         <option value="Italy" selected>意大利</option>
         <option value="China">中国</option>
         </select>
