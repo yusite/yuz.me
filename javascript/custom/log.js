@@ -41,7 +41,7 @@
     // create recent output
     var createSelect = function( jsonarray ) {
         var i, output = [];
-        output.push('<select name="create" style="font-size:16px;width:180px;">');
+        output.push('<select name="create" style="font-size:16px;width:170px;">');
         output.push('<option selected value="">请选择</option>');
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
