@@ -67,6 +67,8 @@ Pushing forward!
             </li>
         </ul>
     </li>
+    <li>备注：<input type="text" name="comment" style="font-size:16px;width:250px;">
+    </li>
 </ol>
 
 <hr>
