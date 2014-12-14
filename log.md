@@ -13,7 +13,7 @@ Pushing forward!
 <form action="https://script.google.com/macros/s/AKfycbxRYZQtTQ3qBQtxU5Q1iMV9_hlgvgALyTyID42IUNfDouFsajfN/exec" method="GET">
 
 <ol style="list-style-type: cjk-ideographic;">
-    <li>任务执行中：
+    <li>执行：
         <ol id="log" style="list-style:none;">
             <li>Loading...</li>
         </ol>
