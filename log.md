@@ -18,18 +18,23 @@ Pushing forward!
             <li>Loading...</li>
         </ol>
     </li>
+
     <li>新建任务：
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:16px;width:270px;">
             @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">Loading...</a>
             </li>
             <li>待办事项：
-            <span id="todo">Loading...</span>&nbsp;
+            <span id="todo">
+            <select name="create" style="font-size:16px;width:170px;"><option selected value="">Loading...</option></select>
+            </span>&nbsp;
             <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=121181765">edit</a>
             </li>
             </li>
             <li>最近任务：
-            <span id="recent">Loading...</span>
+            <span id="recent">
+            <select name="create" style="font-size:16px;width:170px;"><option selected value="">Loading...</option></select>
+            </span>
             </li>
         </ul>
     </li>
