@@ -37,7 +37,7 @@ Pushing forward!
     <span id="todo">
     <select name="todo" style="font-size:16px;width:245px;"><option selected value="">Loading...</option></select>
     </span>
-    <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=121181765">⊕</a>
+    <a href="http://yuz.me/task/">⊕</a>
     </li>
 
     <li>分类：<span style="color:red;" id="test"></span>
