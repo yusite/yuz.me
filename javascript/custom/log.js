@@ -6,10 +6,10 @@
         var content = createDoing(data.doing);
         var idName = 'log';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.recent, 'create', 170);
+        content = createSelect(data.recent, 'create', 165);
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.todo, 'todo', 250);
+        content = createSelect(data.todo, 'todo', 245);
         idName = 'todo';
         document.getElementById(idName).innerHTML = content;
         content = outputLocation(data.place);
