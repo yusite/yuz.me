@@ -19,7 +19,7 @@ Pushing forward!
         </ol>
     </li>
 
-    <li>新建任务：
+    <li>新建任务：<span style="color:red;" id="test2"></span>
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:16px;width:270px;">
             @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">Loading...</a>
@@ -33,12 +33,6 @@ Pushing forward!
             <option value="睡晚觉">睡晚觉</option>
             </select>
             </li>
-            <li>待办事项：
-            <span id="todo">
-            <select name="create" style="font-size:16px;width:170px;"><option selected value="">Loading...</option></select>
-            </span>
-            <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=121181765">⊕</a>
-            </li>
             </li>
             <li>最近任务：
             <span id="recent">
@@ -47,6 +41,14 @@ Pushing forward!
             </li>
         </ul>
     </li>
+
+    <li>积压：
+    <span id="todo">
+    <select name="todo" style="font-size:16px;width:250px;"><option selected value="">Loading...</option></select>
+    </span>
+    <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=121181765">⊕</a>
+    </li>
+
     <li>分类：<span style="color:red;" id="test"></span>
         <ul style="list-style:none;">
             <li>
@@ -67,6 +69,7 @@ Pushing forward!
             </li>
         </ul>
     </li>
+
     <li>备注：<input type="text" name="comment" style="font-size:16px;width:250px;">
     </li>
 </ol>
