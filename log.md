@@ -27,7 +27,7 @@ Pushing forward!
             <li>预设任务：
             <select name="create" style="font-size:16px;width:170px;">
             <option selected value="">请选择</option>
-            <option value="上厕所">休息一下</option>
+            <option value="休息一下">休息一下</option>
             <option value="洗碗">洗碗</option>
             <option value="吃晚饭">吃晚饭</option>
             <option value="睡晚觉">睡晚觉</option>
@@ -72,7 +72,7 @@ Pushing forward!
 <hr>
 
 <p>
-<input type="submit" value="Submit" style="font-size:18px;float: right;margin-bottom:60px;">
+<input type="submit" value="Submit" id="submit" style="font-size:18px;float: right;margin-bottom:60px;">
 </p>
 
 </form>
