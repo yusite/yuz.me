@@ -55,4 +55,26 @@
     var outputLocation = function( jsonarray ) {
         return jsonarray[0];
     };
+    // validate Form
+    $("#submit").on("click", function(event) {
+        var items = $("form").serialize().split(/=|&/);
+        var count, creates = [], categories = [];
+        for (count = 0; count < items.length; count = count + 2) {
+            var id = count + 1;
+            if (items[count] == 'create') {
+                creates.push(items[id]);
+            } else if (items[count] == 'category') {
+                categories.push(items[id]);
+            }
+        }
+        var create = creates.join("");
+        var category = categories.join("");
+
+        if (create && !category) {
+            $("span#test").text("Please select your category!").show().fadeOut(2000);
+            return false;
+        } else {
+            return true;
+        }
+    });
 })();

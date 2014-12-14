@@ -47,7 +47,7 @@ Pushing forward!
             </li>
         </ul>
     </li>
-    <li>分类：
+    <li>分类：<span style="color:red;" id="test"></span>
         <ul style="list-style:none;">
             <li>
                 <input type="checkbox" id ="a1" name="category" value="该做的事"><label for="a1" style="color:Crimson;"> 该做的事</label>&nbsp;&nbsp;&nbsp;
