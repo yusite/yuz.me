@@ -44,7 +44,7 @@ Pushing forward!
         <ul style="list-style:none;">
             <li>
                 <input type="checkbox" id ="a1" name="category" value="该做的事"><label for="a1" style="color:Crimson;"> 该做的事</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a2" name="category" value="个人爱好"><label for="a2"> 个人爱好</label>
+                <input type="checkbox" id ="a2" name="category" value="个人事务"><label for="a2"> 个人事务</label>
             </li>
             <li>
                 <input type="checkbox" id ="a3" name="category" value="家务劳动"><label for="a3"> 家务劳动</label>&nbsp;&nbsp;&nbsp;
