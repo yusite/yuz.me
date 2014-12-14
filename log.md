@@ -24,15 +24,6 @@ Pushing forward!
             <li><input type="text" name="create" style="font-size:16px;width:270px;">
             @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">Loading...</a>
             </li>
-            <li>预设任务：
-            <select name="create" style="font-size:16px;width:170px;">
-            <option selected value="">请选择</option>
-            <option value="休息一下">休息一下</option>
-            <option value="洗碗">洗碗</option>
-            <option value="吃晚饭">吃晚饭</option>
-            <option value="睡晚觉">睡晚觉</option>
-            </select>
-            </li>
             </li>
             <li>最近任务：
             <span id="recent">
