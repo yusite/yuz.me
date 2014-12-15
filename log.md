@@ -55,7 +55,7 @@ Pushing forward!
                 <input type="checkbox" id ="a6" name="category" value="娱乐休闲"><label for="a6"> 休闲与娱乐</label>
             </li>
             <li>
-                <input type="checkbox" id ="a7" name="category" value="日常起居"><label for="a7"> 日常和杂事</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a7" name="category" value="日常起居"><label for="a7"> 日常与杂事</label>&nbsp;&nbsp;&nbsp;
                 <input type="checkbox" id ="a8" name="category" value="休息睡觉"><label for="a8"> 睡觉与休息</label>
             </li>
         </ul>
