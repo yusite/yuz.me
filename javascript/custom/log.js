@@ -40,7 +40,7 @@
         var i, output = [];
         output.push('<select name="');
         output.push(name);
-        output.push('" style="font-size:16px;width:');
+        output.push('" style="font-size:16px;-webkit-appearance: none;width:');
         output.push(width);
         output.push('px;">');
         output.push('<option selected value="">请选择</option>');
