@@ -47,11 +47,11 @@ Pushing forward!
                 <input type="checkbox" id ="a2" name="category" value="个人事务"><label for="a2"> 个人事务</label>
             </li>
             <li>
-                <input type="checkbox" id ="a3" name="category" value="家务劳动"><label for="a3"> 家务劳动</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a3" name="category" value="家务整理"><label for="a3"> 家务整理</label>&nbsp;&nbsp;&nbsp;
                 <input type="checkbox" id ="a4" name="category" value="关系维持"><label for="a4"> 关系维持</label>
             </li>
             <li>
-                <input type="checkbox" id ="a5" name="category" value="运功健身"><label for="a5"> 运功健身</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a5" name="category" value="运动健身"><label for="a5"> 运动健身</label>&nbsp;&nbsp;&nbsp;
                 <input type="checkbox" id ="a6" name="category" value="娱乐休闲"><label for="a6"> 娱乐休闲</label>
             </li>
             <li>
