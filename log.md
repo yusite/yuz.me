@@ -40,8 +40,7 @@ Pushing forward!
 <input type="text" name="comment" style="font-size:16px;">
 </h4>
 
-<h4 style="margin-bottom:0px;">
-分类 <span style="color:red;" id="test"></span></h4>
+<h4>分类 <span style="color:red;" id="test"></span></h4>
 <div>
 <input type="checkbox" id ="a1" name="category" value="工作"><label for="a1" style="color:Crimson;"> 工作</label>&nbsp;&nbsp;&nbsp;
 <input type="checkbox" id ="a2" name="category" value="学习"><label for="a2"> 学习</label>&nbsp;&nbsp;&nbsp;
