@@ -19,8 +19,8 @@ Pushing forward!
         </ol>
     </li>
 
-    <li>新建：<input type="text" name="create" style="font-size:16px;width:200px;"> @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a>
-    <br><span style="color:red;" id="test2"></span>
+    <li>新建：<input type="text" name="create" style="font-size:16px;width:200px;">
+    <br>　　　@ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span>
     </li>
     
     <li>最近：<span id="recent"><select name="create" style="font-size:16px;width:200px;"><option selected value="">Loading...</option></select></span>
