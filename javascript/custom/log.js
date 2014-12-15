@@ -22,14 +22,12 @@
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<input type="checkbox" name="preserve" value="');
             output.push(jsonarray[i]);
-            output.push('" id="');
-            output.push(i);
-            output.push('">');
-            output.push(' <label for="');
-            output.push(i);
-            output.push('">');
+            output.push('" id="' + i + '">');
+            output.push(' <label for="' + i + '">');
             output.push(jsonarray[i]);
-            output.push('</label> ');
+            output.push('</label>');
+            output.push('<br>');
+            output.push('<input type="text" name="post" style="font-size:16px;width:200px;">');
             output.push('<br>');
         }
         var outputString = output.join("");
