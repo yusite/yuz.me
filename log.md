@@ -12,36 +12,36 @@ Pushing forward!
 
 <form action="https://script.google.com/macros/s/AKfycbxRYZQtTQ3qBQtxU5Q1iMV9_hlgvgALyTyID42IUNfDouFsajfN/exec" method="GET">
 
-<h3>任务执行中</h3>
+<h3>1. 任务执行中</h3>
 <div id="log">...</div>
 
-<h3>新建 in
+<h3>2. 新建 in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span>
 <br>
 <input type="text" name="create" style="font-size:16px;">
 </h3>
 
-<h3>最近添加
+<h3>3. 最近添加
 <br>
 <select name="create" id="recent" style="font-size:16px;">
 <option selected value="">Loading...</option>
 </select>
 </h3>
 
-<h3>代办事项（<a href="http://yuz.me/task/">添加</a> 或 <a href="http://yuz.me/d/me/log/">修改</a>）
+<h3>4. 代办事项（<a href="http://yuz.me/task/">添加</a> 或 <a href="http://yuz.me/d/me/log/">修改</a>）
 <br>
 <select name="todo" id="todo" style="font-size:16px;">
 <option selected value="">Loading...</option>
 </select>
 </h3>
 
-<h3>备注
+<h3>5. 备注
 <br>
 <input type="text" name="comment" style="font-size:16px;">
 </h3>
 
 <h3 style="margin-bottom:0px;">
-分类 <span style="color:red;" id="test"></span>
+6. 分类 <span style="color:red;" id="test"></span>
 </h3>
 <div>
 <input type="checkbox" id ="a1" name="category" value="工作"><label for="a1" style="color:Crimson;"> 工作</label>&nbsp;&nbsp;&nbsp;
