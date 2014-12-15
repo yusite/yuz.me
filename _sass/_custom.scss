@@ -7,3 +7,12 @@ table tbody tr.head td {
     margin-left: auto;
     margin-right: auto;
 }
+
+textarea, select, input[type="text"] {
+    width : 200px;
+    margin: 0;
+
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For all Gecko based browsers */
+          box-sizing: border-box;
+}

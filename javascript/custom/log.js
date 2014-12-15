@@ -6,10 +6,10 @@
         var content = createDoing(data.doing);
         var idName = 'log';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.recent, 'create', 200);
+        content = createSelect(data.recent, 'create');
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.todo, 'todo', 200);
+        content = createSelect(data.todo, 'todo');
         idName = 'todo';
         document.getElementById(idName).innerHTML = content;
         content = outputLocation(data.place);
@@ -20,7 +20,7 @@
     var createDoing = function( jsonarray ) {
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
-            output.push('<li><input type="checkbox" name="preserve" value="');
+            output.push('<input type="checkbox" name="preserve" value="');
             output.push(jsonarray[i]);
             output.push('" id="');
             output.push(i);
@@ -30,19 +30,14 @@
             output.push('">');
             output.push(jsonarray[i]);
             output.push('</label>');
-            output.push('</li>');
+            output.push('<br>');
         }
         var outputString = output.join("");
         return outputString;
     };
     // create recent output
-    var createSelect = function( jsonarray, name, width ) {
+    var createSelect = function( jsonarray, name ) {
         var i, output = [];
-        output.push('<select name="');
-        output.push(name);
-        output.push('" style="font-size:16px;-webkit-appearance: none;width:');
-        output.push(width);
-        output.push('px;">');
         output.push('<option selected value="">请选择</option>');
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
@@ -51,7 +46,6 @@
             output.push(jsonarray[i]);
             output.push('</option>');
         }
-        output.push('</select>');
         var outputString = output.join("");
         return outputString;
     };
