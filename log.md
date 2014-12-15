@@ -16,29 +16,25 @@ Pushing forward!
 <div id="log">...</div>
 
 <h4>新建 in
-<a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span>
-<br>
-<input type="text" name="create" style="font-size:16px;">
-</h4>
+<a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span></h4>
+<div><input type="text" name="create" style="font-size:16px;"></div>
 
-<h4>最近添加
-<br>
+<h4>最近添加</h4>
+<div>
 <select name="create" id="recent" style="font-size:16px;">
 <option selected value="">Loading...</option>
 </select>
-</h4>
+</div>
 
-<h4>代办事项（<a href="http://yuz.me/task/">添加</a> 或 <a href="http://yuz.me/d/me/log/">修改</a>）
-<br>
+<h4>代办事项（<a href="http://yuz.me/task/">添加</a> 或 <a href="http://yuz.me/d/me/log/">修改</a>）</h4>
+<div>
 <select name="todo" id="todo" style="font-size:16px;">
 <option selected value="">Loading...</option>
 </select>
-</h4>
+</div>
 
-<h4>备注
-<br>
-<input type="text" name="comment" style="font-size:16px;">
-</h4>
+<h4>备注</h4>
+<div><input type="text" name="comment" style="font-size:16px;"></div>
 
 <h4>分类 <span style="color:red;" id="test"></span></h4>
 <div>
