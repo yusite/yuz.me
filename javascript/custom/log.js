@@ -20,17 +20,18 @@
     var createDoing = function( jsonarray ) {
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
+            output.push('<li>');
+            output.push('<label for="');
+            output.push(i);
+            output.push('">');
+            output.push(jsonarray[i]);
+            output.push('</label> ');
             output.push('<input type="checkbox" name="preserve" value="');
             output.push(jsonarray[i]);
             output.push('" id="');
             output.push(i);
             output.push('">');
-            output.push(' <label for="');
-            output.push(i);
-            output.push('">');
-            output.push(jsonarray[i]);
-            output.push('</label>');
-            output.push('<br>');
+            output.push('</li>');
         }
         var outputString = output.join("");
         return outputString;

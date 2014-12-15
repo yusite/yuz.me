@@ -12,8 +12,8 @@ Pushing forward!
 
 <form action="https://script.google.com/macros/s/AKfycbxRYZQtTQ3qBQtxU5Q1iMV9_hlgvgALyTyID42IUNfDouFsajfN/exec" method="GET">
 
-<h4 style="margin-bottom:0px;">任务执行中</h4>
-<div id="log">...</div>
+<h4>任务执行中</h4>
+<ul id="log"><li>...</li></ul>
 
 <h4>新建 in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span>
