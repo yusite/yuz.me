@@ -15,14 +15,14 @@ Pushing forward!
 <ol style="list-style-type: cjk-ideographic;">
     <li>执行：
         <ol id="log" style="list-style:none;">
-            <li>Loading...</li>
+            <li>...</li>
         </ol>
     </li>
 
     <li>新建：<span style="color:red;" id="test2"></span>
         <ul style="list-style:none;">
             <li><input type="text" name="create" style="font-size:16px;width:270px;">
-            @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">Loading...</a>
+            @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a>
             </li>
             </li>
             <li>最近任务：
