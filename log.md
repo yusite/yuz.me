@@ -43,20 +43,24 @@ Pushing forward!
     <li>分类：<span style="color:red;" id="test"></span>
         <ul style="list-style:none;">
             <li>
-                <input type="checkbox" id ="a1" name="category" value="重要的工作"><label for="a1" style="color:Crimson;"> 重要的工作</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a2" name="category" value="爱好与个人"><label for="a2"> 爱好与个人</label>
+                <input type="checkbox" id ="a1" name="category" value="工作"><label for="a1" style="color:Crimson;"> 工作</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a2" name="category" value="学习"><label for="a2"> 学习</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a3" name="category" value="讨论"><label for="a3"> 讨论</label>
             </li>
             <li>
-                <input type="checkbox" id ="a3" name="category" value="家务与整理"><label for="a3"> 家务与整理</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a4" name="category" value="关系维持"><label for="a4"> 联络与公关</label>
+                <input type="checkbox" id ="a4" name="category" value="管理"><label for="a4"> 管理</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a5" name="category" value="个人"><label for="a5"> 个人</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a6" name="category" value="交通"><label for="a6"> 交通</label>
             </li>
             <li>
-                <input type="checkbox" id ="a5" name="category" value="运动健身"><label for="a5"> 运动与健身</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a6" name="category" value="娱乐休闲"><label for="a6"> 休闲与娱乐</label>
+                <input type="checkbox" id ="a7" name="category" value="家务"><label for="a7"> 家务</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a8" name="category" value="交际"><label for="a8"> 交际</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a9" name="category" value="健身"><label for="a9"> 健身</label>
             </li>
             <li>
-                <input type="checkbox" id ="a7" name="category" value="日常起居"><label for="a7"> 日常与杂事</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a8" name="category" value="休息睡觉"><label for="a8"> 睡觉与休息</label>
+                <input type="checkbox" id ="A1" name="category" value="娱乐"><label for="A1"> 娱乐</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="A2" name="category" value="休息"><label for="A2"> 休息</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="A3" name="category" value="其他"><label for="A3"> 其他</label>
             </li>
         </ul>
     </li>
