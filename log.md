@@ -36,7 +36,7 @@ Pushing forward!
     <li>积压：
     <span id="todo">
     <select name="todo" style="font-size:16px;width:245px;"><option selected value="">Loading...</option></select>
-    </span>
+    </span>&nbsp;
     <a href="http://yuz.me/task/">Add</a> / <a href="http://yuz.me/d/me/log/">Edit</a>
     </li>
 
