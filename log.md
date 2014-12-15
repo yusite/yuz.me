@@ -43,20 +43,20 @@ Pushing forward!
     <li>分类：<span style="color:red;" id="test"></span>
         <ul style="list-style:none;">
             <li>
-                <input type="checkbox" id ="a1" name="category" value="该做的事"><label for="a1" style="color:Crimson;"> 该做的事</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a2" name="category" value="个人事务"><label for="a2"> 个人事务</label>
+                <input type="checkbox" id ="a1" name="category" value="重要的工作"><label for="a1" style="color:Crimson;"> 重要的工作</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a2" name="category" value="爱好与个人"><label for="a2"> 爱好与个人</label>
             </li>
             <li>
-                <input type="checkbox" id ="a3" name="category" value="家务整理"><label for="a3"> 家务整理</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a4" name="category" value="关系维持"><label for="a4"> 关系维持</label>
+                <input type="checkbox" id ="a3" name="category" value="家务与整理"><label for="a3"> 家务与整理</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a4" name="category" value="关系维持"><label for="a4"> 联络与公关</label>
             </li>
             <li>
-                <input type="checkbox" id ="a5" name="category" value="运动健身"><label for="a5"> 运动健身</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a6" name="category" value="娱乐休闲"><label for="a6"> 娱乐休闲</label>
+                <input type="checkbox" id ="a5" name="category" value="运动健身"><label for="a5"> 运动与健身</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a6" name="category" value="娱乐休闲"><label for="a6"> 休闲与娱乐</label>
             </li>
             <li>
-                <input type="checkbox" id ="a7" name="category" value="日常起居"><label for="a7"> 日常起居</label>&nbsp;&nbsp;&nbsp;
-                <input type="checkbox" id ="a8" name="category" value="休息睡觉"><label for="a8"> 休息睡觉</label>
+                <input type="checkbox" id ="a7" name="category" value="日常起居"><label for="a7"> 日常和杂事</label>&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id ="a8" name="category" value="休息睡觉"><label for="a8"> 睡觉与休息</label>
             </li>
         </ul>
     </li>
