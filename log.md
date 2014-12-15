@@ -21,13 +21,13 @@ Pushing forward!
 
     <li>新建：<span style="color:red;" id="test2"></span>
         <ul style="list-style:none;">
-            <li><input type="text" name="create" style="font-size:16px;width:270px;">
+            <li><input type="text" name="create" style="font-size:16px;width:230px;">
             @ <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a>
             </li>
             </li>
             <li>最近任务：
             <span id="recent">
-            <select name="create" style="font-size:16px;width:165px;"><option selected value="">Loading...</option></select>
+            <select name="create" style="font-size:16px;width:125px;"><option selected value="">Loading...</option></select>
             </span>
             </li>
         </ul>
@@ -35,7 +35,7 @@ Pushing forward!
 
     <li>积压：
     <span id="todo">
-    <select name="todo" style="font-size:16px;width:245px;"><option selected value="">Loading...</option></select>
+    <select name="todo" style="font-size:16px;width:205px;"><option selected value="">Loading...</option></select>
     </span>&nbsp;
     <a href="http://yuz.me/task/">Add</a> / <a href="http://yuz.me/d/me/log/">Edit</a>
     </li>
@@ -65,7 +65,7 @@ Pushing forward!
         </ul>
     </li>
 
-    <li>备注：<input type="text" name="comment" style="font-size:16px;width:250px;">
+    <li>备注：<input type="text" name="comment" style="font-size:16px;width:210px;">
     </li>
 </ol>
 
