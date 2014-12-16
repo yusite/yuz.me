@@ -15,6 +15,8 @@ Pushing forward!
 <h3><strong>1. 任务执行中</strong></h3>
 <div id="log">...</div>
 
+<hr>
+
 <h3><strong>2. 新建</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span>
 <br>
@@ -40,6 +42,8 @@ Pushing forward!
 <br>
 <input type="text" name="comment" style="font-size:18px;">
 </h4>
+
+<hr>
 
 <h3 style="margin-bottom:0px;">
 <strong>3. 任务分类</strong>
