@@ -21,16 +21,14 @@ Pushing forward!
 <input type="text" name="create" style="font-size:18px;">
 </h3>
 
-<h4 style="font-size:22px;">
-2.1 最近添加
+<h4>2.1 最近添加
 <br>
 <select name="create" id="recent" style="font-size:18px;">
 <option selected value="">Loading...</option>
 </select>
 </h4>
 
-<h4 style="font-size:22px;">
-2.2 待办事项
+<h4>2.2 待办事项
 <a href="http://yuz.me/task/">加</a>/<a href="http://yuz.me/d/me/log/">改</a>
 <br>
 <select name="todo" id="todo" style="font-size:18px;">
@@ -38,8 +36,7 @@ Pushing forward!
 </select>
 </h4>
 
-<h4 style="font-size:22px;">
-2.3 备注
+<h4>2.3 备注
 <br>
 <input type="text" name="comment" style="font-size:18px;">
 </h4>
@@ -48,7 +45,7 @@ Pushing forward!
 <strong>3. 任务分类</strong>
 <span style="color:red;" id="test"></span>
 </h3>
-<div style="font-size:22px;">
+<div style="font-size:20px;">
 <label for="a1" style="color:FireBrick;">工作</label>
 <input type="checkbox" id ="a1" name="category" value="工作">
 &nbsp;&nbsp;&nbsp;&nbsp;
