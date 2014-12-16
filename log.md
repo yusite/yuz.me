@@ -31,7 +31,7 @@ Pushing forward!
 </h4>
 
 <h4>2.2 待办事项
-<a href="http://yuz.me/task/">加</a>/<a href="http://yuz.me/d/me/log/">改</a>
+（<a href="http://yuz.me/task/">添</a> · <a href="http://yuz.me/d/me/log/">改</a>）
 <br>
 <select name="todo" id="todo" style="font-size:18px;">
 <option selected value="">Loading...</option>
@@ -59,23 +59,23 @@ Pushing forward!
 <label for="a3" style="color:FireBrick;">研讨</label>
 <input type="checkbox" id ="a3" name="category" value="研讨">
 <br>
-<label for="a4" style="color:DarkOrange;">交通</label>
-<input type="checkbox" id ="a4" name="category" value="交通">
+<label for="a4" style="color:DodgerBlue;">业余</label>
+<input type="checkbox" id ="a4" name="category" value="业余">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a5" style="color:DarkOrange;">管理</label>
-<input type="checkbox" id ="a5" name="category" value="管理">
+<label for="a5" style="color:DodgerBlue;">交际</label>
+<input type="checkbox" id ="a5" name="category" value="交际">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a6" style="color:DarkOrange;">家务</label>
-<input type="checkbox" id ="a6" name="category" value="家务">
+<label for="a6" style="color:DodgerBlue;">健身</label>
+<input type="checkbox" id ="a6" name="category" value="健身">
 <br>
-<label for="a7" style="color:DodgerBlue;">个人</label>
-<input type="checkbox" id ="a7" name="category" value="个人">
+<label for="a7" style="color:DarkOrange;">卫生</label>
+<input type="checkbox" id ="a7" name="category" value="卫生">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a8" style="color:DodgerBlue;">交际</label>
-<input type="checkbox" id ="a8" name="category" value="交际">
+<label for="a8" style="color:DarkOrange;">管理</label>
+<input type="checkbox" id ="a8" name="category" value="管理">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a9" style="color:DodgerBlue;">健身</label>
-<input type="checkbox" id ="a9" name="category" value="健身">
+<label for="a9" style="color:DarkOrange;">交通</label>
+<input type="checkbox" id ="a9" name="category" value="交通">
 <br>
 <label for="A1" style="color:ForestGreen;">休息</label>
 <input type="checkbox" id ="A1" name="category" value="休息">
