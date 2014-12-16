@@ -53,11 +53,11 @@ Pushing forward!
 <label for="a1" style="color:FireBrick;">工作</label>
 <input type="checkbox" id ="a1" name="category" value="工作">
 &nbsp;&nbsp;&nbsp;&nbsp;
+<label for="a3" style="color:FireBrick;">交流</label>
+<input type="checkbox" id ="a3" name="category" value="交流">
+&nbsp;&nbsp;&nbsp;&nbsp;
 <label for="a2" style="color:FireBrick;">学习</label>
 <input type="checkbox" id ="a2" name="category" value="学习">
-&nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a3" style="color:FireBrick;">研讨</label>
-<input type="checkbox" id ="a3" name="category" value="研讨">
 <br>
 <label for="a4" style="color:DodgerBlue;">业余</label>
 <input type="checkbox" id ="a4" name="category" value="业余">
