@@ -53,11 +53,11 @@ Pushing forward!
 <label for="a1" style="color:FireBrick;">工作</label>
 <input type="checkbox" id ="a1" name="category" value="工作">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a3" style="color:FireBrick;">交流</label>
-<input type="checkbox" id ="a3" name="category" value="交流">
+<label for="a2" style="color:FireBrick;">交流</label>
+<input type="checkbox" id ="a2" name="category" value="交流">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a2" style="color:FireBrick;">学习</label>
-<input type="checkbox" id ="a2" name="category" value="学习">
+<label for="a3" style="color:FireBrick;">学习</label>
+<input type="checkbox" id ="a3" name="category" value="学习">
 <br>
 <label for="a4" style="color:DodgerBlue;">业余</label>
 <input type="checkbox" id ="a4" name="category" value="业余">
@@ -83,11 +83,11 @@ Pushing forward!
 <label for="A2" style="color:ForestGreen;">娱乐</label>
 <input type="checkbox" id ="A2" name="category" value="娱乐">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="A3" style="color:ForestGreen;">特殊</label>
-<input type="checkbox" id ="A3" name="category" value="特殊">
+<label for="A3" style="color:ForestGreen;">日常</label>
+<input type="checkbox" id ="A3" name="category" value="日常">
 <br>
-<label for="A4" style="color:MediumVioletRed;">日常</label>
-<input type="checkbox" id ="A4" name="category" value="日常">
+<label for="A4" style="color:MediumVioletRed;">特殊</label>
+<input type="checkbox" id ="A4" name="category" value="特殊">
 &nbsp;&nbsp;&nbsp;&nbsp;
 <label for="A5" style="color:MediumVioletRed;">其他</label>
 <input type="checkbox" id ="A5" name="category" value="其他">
