@@ -85,6 +85,12 @@ Pushing forward!
 &nbsp;&nbsp;&nbsp;&nbsp;
 <label for="A3" style="color:ForestGreen;">特殊</label>
 <input type="checkbox" id ="A3" name="category" value="特殊">
+<br>
+<label for="A4" style="color:MediumVioletRed;">日常</label>
+<input type="checkbox" id ="A4" name="category" value="日常">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="A5" style="color:MediumVioletRed;">其他</label>
+<input type="checkbox" id ="A5" name="category" value="其他">
 </div>
 
 <hr>
