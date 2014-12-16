@@ -13,7 +13,7 @@ Pushing forward!
 <form action="https://script.google.com/macros/s/AKfycbxRYZQtTQ3qBQtxU5Q1iMV9_hlgvgALyTyID42IUNfDouFsajfN/exec" method="GET">
 
 <h3><strong>1. 任务执行中</strong></h3>
-<div id="log">...</div>
+<div id="log" style="font-size:20px;">...</div>
 
 <hr>
 
@@ -45,10 +45,10 @@ Pushing forward!
 
 <hr>
 
-<h3 style="margin-bottom:0px;">
-<strong>3. 任务分类</strong>
+<h3><strong>3. 任务分类</strong>
 <span style="color:red;" id="test"></span>
 </h3>
+
 <div style="font-size:20px;">
 <label for="a1" style="color:FireBrick;">工作</label>
 <input type="checkbox" id ="a1" name="category" value="工作">
