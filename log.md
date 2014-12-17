@@ -59,11 +59,11 @@ Pushing forward!
 <label for="a4" style="color:DarkOrange;">日常</label>
 <input type="checkbox" id ="a4" name="category" value="日常">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a5" style="color:DarkOrange;">交际</label>
-<input type="checkbox" id ="a5" name="category" value="交际">
+<label for="a5" style="color:DarkOrange;">健康</label>
+<input type="checkbox" id ="a5" name="category" value="健康">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a6" style="color:DarkOrange;">健康</label>
-<input type="checkbox" id ="a6" name="category" value="健康">
+<label for="a6" style="color:DarkOrange;">往来</label>
+<input type="checkbox" id ="a6" name="category" value="往来">
 <br>
 <label for="a7" style="color:ForestGreen;">管理</label>
 <input type="checkbox" id ="a7" name="category" value="管理">
