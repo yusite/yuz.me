@@ -20,25 +20,22 @@ Pushing forward!
 <h3><strong>2. 新建</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1k6HhhgqxFaCh5VRzfqmkuODzh59lUI7TUpEEzhWUsLw/edit#gid=669333296" id="place">...</a> <span style="color:red;" id="test2"></span>
 <br>
-<input type="text" name="create" style="font-size:18px;">
-</h3>
-
-<h4>2.1 最近添加
-<br>
 <select name="create" id="recent" style="font-size:18px;">
 <option selected value="">Loading...</option>
 </select>
-</h4>
+<br>
+<input type="text" name="create" style="font-size:18px;">
+</h3>
 
-<h4>2.2 待办事项
-（<a href="http://yuz.me/task/">添</a> · <a href="http://yuz.me/d/me/log/">改</a>）
+<h4>待办事项&nbsp;
+<a href="http://yuz.me/task/">添</a> · <a href="http://yuz.me/d/me/log/">改</a>
 <br>
 <select name="todo" id="todo" style="font-size:18px;">
 <option selected value="">Loading...</option>
 </select>
 </h4>
 
-<h4>2.3 备注
+<h4>备注
 <br>
 <input type="text" name="comment" style="font-size:18px;">
 </h4>
