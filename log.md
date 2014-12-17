@@ -47,8 +47,8 @@ Pushing forward!
 </h3>
 
 <div style="font-size:20px;">
-<label for="a1" style="color:FireBrick;">工作</label>
-<input type="checkbox" id ="a1" name="category" value="工作">
+<label for="a1" style="color:FireBrick;">奋斗</label>
+<input type="checkbox" id ="a1" name="category" value="奋斗">
 &nbsp;&nbsp;&nbsp;&nbsp;
 <label for="a2" style="color:FireBrick;">个人</label>
 <input type="checkbox" id ="a2" name="category" value="个人">
