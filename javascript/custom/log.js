@@ -6,10 +6,10 @@
         var content = createDoing(data.doing);
         var idName = 'log';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.recent, 'create');
+        content = createSelect(data.recent, 'create', '最近添加');
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.todo, 'todo');
+        content = createSelect(data.todo, 'todo', 'ToDo List');
         idName = 'todo';
         document.getElementById(idName).innerHTML = content;
         content = outputLocation(data.place);
@@ -34,9 +34,11 @@
         return outputString;
     };
     // create recent output
-    var createSelect = function( jsonarray, name ) {
+    var createSelect = function( jsonarray, name, option ) {
         var i, output = [];
-        output.push('<option selected value="">请选择</option>');
+        output.push('<option selected value="">');
+        output.push(option);
+        output.push('</option>');
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
             output.push(jsonarray[i]);
