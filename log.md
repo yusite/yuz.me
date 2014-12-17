@@ -53,44 +53,29 @@ Pushing forward!
 <label for="a1" style="color:FireBrick;">工作</label>
 <input type="checkbox" id ="a1" name="category" value="工作">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a2" style="color:FireBrick;">交流</label>
-<input type="checkbox" id ="a2" name="category" value="交流">
+<label for="a2" style="color:FireBrick;">外出</label>
+<input type="checkbox" id ="a2" name="category" value="外出">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a3" style="color:FireBrick;">学习</label>
-<input type="checkbox" id ="a3" name="category" value="学习">
+<label for="a3" style="color:FireBrick;">个人</label>
+<input type="checkbox" id ="a3" name="category" value="个人">
 <br>
-<label for="a4" style="color:DodgerBlue;">业余</label>
-<input type="checkbox" id ="a4" name="category" value="业余">
+<label for="a4" style="color:DarkOrange;">交际</label>
+<input type="checkbox" id ="a4" name="category" value="交际">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a5" style="color:DodgerBlue;">交际</label>
-<input type="checkbox" id ="a5" name="category" value="交际">
+<label for="a5" style="color:DarkOrange;">健身</label>
+<input type="checkbox" id ="a5" name="category" value="健身">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a6" style="color:DodgerBlue;">健身</label>
-<input type="checkbox" id ="a6" name="category" value="健身">
+<label for="a6" style="color:DarkOrange;">休息</label>
+<input type="checkbox" id ="a6" name="category" value="休息">
 <br>
-<label for="a7" style="color:DarkOrange;">卫生</label>
-<input type="checkbox" id ="a7" name="category" value="卫生">
+<label for="a7" style="color:ForestGreen;">管理</label>
+<input type="checkbox" id ="a7" name="category" value="管理">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a8" style="color:DarkOrange;">管理</label>
-<input type="checkbox" id ="a8" name="category" value="管理">
+<label for="a8" style="color:ForestGreen;">交通</label>
+<input type="checkbox" id ="a8" name="category" value="交通">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a9" style="color:DarkOrange;">交通</label>
-<input type="checkbox" id ="a9" name="category" value="交通">
-<br>
-<label for="A1" style="color:ForestGreen;">休息</label>
-<input type="checkbox" id ="A1" name="category" value="休息">
-&nbsp;&nbsp;&nbsp;&nbsp;
-<label for="A2" style="color:ForestGreen;">娱乐</label>
-<input type="checkbox" id ="A2" name="category" value="娱乐">
-&nbsp;&nbsp;&nbsp;&nbsp;
-<label for="A3" style="color:ForestGreen;">日常</label>
-<input type="checkbox" id ="A3" name="category" value="日常">
-<br>
-<label for="A4" style="color:MediumVioletRed;">特殊</label>
-<input type="checkbox" id ="A4" name="category" value="特殊">
-&nbsp;&nbsp;&nbsp;&nbsp;
-<label for="A5" style="color:MediumVioletRed;">其他</label>
-<input type="checkbox" id ="A5" name="category" value="其他">
+<label for="a9" style="color:ForestGreen;">其他</label>
+<input type="checkbox" id ="a9" name="category" value="其他">
 </div>
 
 <hr>
