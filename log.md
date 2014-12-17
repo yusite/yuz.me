@@ -50,20 +50,20 @@ Pushing forward!
 <label for="a1" style="color:FireBrick;">工作</label>
 <input type="checkbox" id ="a1" name="category" value="工作">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a2" style="color:FireBrick;">外出</label>
-<input type="checkbox" id ="a2" name="category" value="外出">
+<label for="a2" style="color:FireBrick;">个人</label>
+<input type="checkbox" id ="a2" name="category" value="个人">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a3" style="color:FireBrick;">个人</label>
-<input type="checkbox" id ="a3" name="category" value="个人">
+<label for="a3" style="color:FireBrick;">消遣</label>
+<input type="checkbox" id ="a3" name="category" value="消遣">
 <br>
-<label for="a4" style="color:DarkOrange;">交际</label>
-<input type="checkbox" id ="a4" name="category" value="交际">
+<label for="a4" style="color:DarkOrange;">日常</label>
+<input type="checkbox" id ="a4" name="category" value="日常">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a5" style="color:DarkOrange;">健身</label>
-<input type="checkbox" id ="a5" name="category" value="健身">
+<label for="a5" style="color:DarkOrange;">交际</label>
+<input type="checkbox" id ="a5" name="category" value="交际">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a6" style="color:DarkOrange;">休息</label>
-<input type="checkbox" id ="a6" name="category" value="休息">
+<label for="a6" style="color:DarkOrange;">健康</label>
+<input type="checkbox" id ="a6" name="category" value="健康">
 <br>
 <label for="a7" style="color:ForestGreen;">管理</label>
 <input type="checkbox" id ="a7" name="category" value="管理">
@@ -71,14 +71,14 @@ Pushing forward!
 <label for="a8" style="color:ForestGreen;">交通</label>
 <input type="checkbox" id ="a8" name="category" value="交通">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a9" style="color:ForestGreen;">其他</label>
-<input type="checkbox" id ="a9" name="category" value="其他">
+<label for="a9" style="color:ForestGreen;">特殊</label>
+<input type="checkbox" id ="a9" name="category" value="特殊">
 </div>
 
 <hr>
 
 <p>
-<input type="submit" value="Submit" id="submit" style="font-size:18px;float: right;margin-bottom:60px;">
+<input type="submit" value="Submit" id="submit" style="font-size:18px;float:right;margin-bottom:60px;">
 </p>
 
 </form>
