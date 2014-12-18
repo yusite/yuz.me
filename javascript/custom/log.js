@@ -74,9 +74,6 @@
         if (todo && !create) {
             $("span#test2").text("Please insert a new task!").show().fadeOut(2000);
             return false;
-        } else if (create && !category) {
-            $("span#test").text("Please select your category!").show().fadeOut(2000);
-            return false;
         } else {
             return true;
         }
