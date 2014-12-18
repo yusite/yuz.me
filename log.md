@@ -12,7 +12,7 @@ Pushing forward!
 
 <form action="https://script.google.com/macros/s/AKfycbxRYZQtTQ3qBQtxU5Q1iMV9_hlgvgALyTyID42IUNfDouFsajfN/exec" method="GET">
 
-<h3><strong>1. 执行</strong></h3>
+<h3><strong>1. 执行中</strong></h3>
 <div id="log" style="font-size:20px;">...</div>
 
 <h3><strong>2. 新建</strong> in
@@ -25,13 +25,11 @@ Pushing forward!
 <input type="text" name="create" style="font-size:18px;">
 </h3>
 
-<h3><strong>3. 备注</strong>
+<h3><strong>3. 待办事项</strong>
 <br>
 <select name="todo" id="todo" style="font-size:18px;">
 <option selected value="">Loading...</option>
 </select> <a href="http://yuz.me/task/">+</a>
-<br>
-<input type="text" name="comment" style="font-size:18px;">
 </h3>
 
 <hr>

@@ -27,7 +27,7 @@
             output.push(jsonarray[i]);
             output.push('</label>');
             output.push('<br>');
-            output.push('<input type="text" name="post" style="font-size:16px;">');
+            output.push('<textarea name="post" rows="1" style="font-size:16px;"></textarea>');
             output.push('<br>');
         }
         var outputString = output.join("");
