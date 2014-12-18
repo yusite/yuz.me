@@ -59,8 +59,8 @@ Pushing forward!
 <label for="a4" style="color:DarkOrange;">日常</label>
 <input type="checkbox" id ="a4" name="category" value="日常">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a5" style="color:DarkOrange;">健康</label>
-<input type="checkbox" id ="a5" name="category" value="健康">
+<label for="a5" style="color:DarkOrange;">养生</label>
+<input type="checkbox" id ="a5" name="category" value="养生">
 &nbsp;&nbsp;&nbsp;&nbsp;
 <label for="a6" style="color:DarkOrange;">往来</label>
 <input type="checkbox" id ="a6" name="category" value="往来">
@@ -71,8 +71,8 @@ Pushing forward!
 <label for="a8" style="color:ForestGreen;">交通</label>
 <input type="checkbox" id ="a8" name="category" value="交通">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<label for="a9" style="color:ForestGreen;">特殊</label>
-<input type="checkbox" id ="a9" name="category" value="特殊">
+<label for="a9" style="color:ForestGreen;">其他</label>
+<input type="checkbox" id ="a9" name="category" value="其他">
 </div>
 
 <hr>
