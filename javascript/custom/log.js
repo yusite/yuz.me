@@ -6,7 +6,7 @@
         var content = createDoing(data.doing);
         var idName = 'log';
         document.getElementById(idName).innerHTML = content;
-        content = createSelect(data.recent, 'create', '最近添加');
+        content = createSelect(data.recent, 'create', 'Recent Tasks');
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
         content = createSelect(data.todo, 'todo', 'ToDo List');
@@ -20,14 +20,14 @@
     var createDoing = function( jsonarray ) {
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
-            output.push('<input type="checkbox" name="preserve" value="');
+            output.push('<input type="checkbox" name="checked" value="');
             output.push(jsonarray[i]);
             output.push('" id="' + i + '">');
             output.push(' <label for="' + i + '">');
             output.push(jsonarray[i]);
             output.push('</label>');
             output.push('<br>');
-            output.push('<input type="text" name="post" style="font-size:16px;width:200px;">');
+            output.push('<input type="text" name="post" style="font-size:16px;">');
             output.push('<br>');
         }
         var outputString = output.join("");
@@ -56,19 +56,16 @@
     // validate Form
     $("#submit").on("click", function(event) {
         var items = $("form").serialize().split(/=|&/);
-        var count, creates = [], categories = [], todos = [];
+        var count, creates = [], todos = [];
         for (count = 0; count < items.length; count = count + 2) {
             var id = count + 1;
             if (items[count] == 'create') {
                 creates.push(items[id]);
-            } else if (items[count] == 'category') {
-                categories.push(items[id]);
             } else if (items[count] == 'todo') {
                 todos.push(items[id]);
             }
         }
         var create = creates.join("");
-        var category = categories.join("");
         var todo = todos.join("");
 
         if (todo && !create) {
