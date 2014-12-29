@@ -14,6 +14,22 @@
         return outputString;
     };
 
+    var outputSelect = function( jsonarray, name, option ) {
+        var i, output = [];
+        output.push('<option selected value="">');
+        output.push(option);
+        output.push('</option>');
+        for (i = 0; i < jsonarray.length; i++) {
+            output.push('<option value="');
+            output.push(jsonarray[i]);
+            output.push('">');
+            output.push(jsonarray[i]);
+            output.push('</option>');
+        }
+        var outputString = output.join("");
+        return outputString;
+    };
+
     var outputLocation = function( value ) {
         return value;
     };
@@ -25,6 +41,9 @@
         content = outputLocation(data.place);
         idName = 'place';
         document.getElementById(idName).innerHTML = content;
+        content = outputSelect(data.recent, 'create', 'Recent Tasks');
+        idName = 'recent';
+        document.getElementById(idName).innerHTML = content;
     });
 
     $(document).on("click", '#submit', function(event){
@@ -34,9 +53,8 @@
         command.push('?');
         command.push($('#form').serialize());
         command.push('&state=?');
-        $('#send').html('Submitting...');
+        $('#send').html('Done!');
         $.getJSON(command.join('')).done(function(data) {
-            $('#send').html('Done!');
             location.reload();
         });
     });
