@@ -36,7 +36,8 @@
         command.push('&state=?');
         $('#send').html('Submitting...');
         $.getJSON(command.join('')).done(function(data) {
-            window.close();
+            $('#send').html('Done!');
+            location.reload();
         });
     });
 
