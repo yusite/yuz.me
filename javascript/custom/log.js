@@ -28,6 +28,7 @@
         }
         output.push('<option value="" disabled>------</option>');
         output.push('<option value="喝一杯水">喝一杯水</option>');
+        output.push('<option value="休息一下">休息一下</option>');
         var outputString = output.join("");
         return outputString;
     };
