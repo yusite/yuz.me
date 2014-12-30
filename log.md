@@ -15,8 +15,6 @@ Pushing forward!
 <h3><strong>1. 执行中</strong></h3>
 <div id="log" style="font-size:20px;">...</div>
 
-<hr>
-
 <h3><strong>2. 新建</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">...</a>
 <br>

@@ -5,11 +5,12 @@
     var outputDoing = function( jsonarray ) {
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
+            output.push('<div>');
             output.push(jsonarray[i]);
-            output.push(' <button type="button" style="font-size:16px;">完成</button>');
+            output.push(' <button class="done" type="button" style="font-size:16px;">完成</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
-            output.push('<br>');
+            output.push('</div>');
         }
         var outputString = output.join("");
         return outputString;
@@ -58,6 +59,30 @@
         $.getJSON(command.join('')).done(function(data) {
             location.reload();
         });
+    });
+
+    $(document).on("click", 'button.done', function(event){
+        event.preventDefault();
+        var textarea = $(this).parent().find("textarea");
+        if (textarea.val()) {
+            textarea.val('');
+        } else {
+            textarea.val('✓');
+        }
+        if (textarea.val()) {
+            $(this).text('Clear');
+        } else {
+            $(this).text('Done');
+        }
+    });
+
+    $(document).on("blur keyup", 'textarea', function(){
+        var button = $(this).parent().find('button.done');
+        if ($(this).val()) {
+            button.text('Clear');
+        } else {
+            button.text('Done');
+        }
     });
 
 })();
