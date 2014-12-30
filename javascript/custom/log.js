@@ -7,7 +7,7 @@
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<div>');
             output.push(jsonarray[i]);
-            output.push(' <button class="done" type="button" style="font-size:16px;">完成</button>');
+            output.push(' <button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;">Done</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
             output.push('</div>');
