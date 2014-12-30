@@ -6,8 +6,9 @@
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
             output.push(jsonarray[i]);
+            output.push(' <button type="button">完成</button>');
             output.push('<br>');
-            output.push('<textarea name="summary" rows="1" style="font-size:16px;"></textarea>');
+            output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
             output.push('<br>');
         }
         var outputString = output.join("");
