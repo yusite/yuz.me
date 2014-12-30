@@ -55,9 +55,9 @@
         command.push('?');
         command.push($('#form').serialize());
         command.push('&state=?');
-        $('#send').html('<span color="green">Sending...</span>');
+        $('#send').html('<span style="color:green;">Sending...</span>');
         $.getJSON(command.join('')).done(function(data) {
-            $('#send').html('<span color="red">Done!</span>');
+            $('#send').html('<span style="color:red;">Done!</span>');
             location.reload();
         });
     });
