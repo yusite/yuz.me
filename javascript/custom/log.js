@@ -6,7 +6,7 @@
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
             output.push(jsonarray[i]);
-            output.push(' <button type="button">完成</button>');
+            output.push(' <button type="button" style="font-size:16px;">完成</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
             output.push('<br>');
