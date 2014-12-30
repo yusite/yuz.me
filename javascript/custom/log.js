@@ -16,11 +16,9 @@
         return outputString;
     };
 
-    var outputSelect = function( jsonarray, name, option ) {
+    var outputRecent = function( jsonarray, name, option ) {
         var i, output = [];
-        output.push('<option selected value="">');
-        output.push(option);
-        output.push('</option>');
+        output.push('<option value="" selected>' + option + '</option>');
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
             output.push(jsonarray[i]);
@@ -28,6 +26,8 @@
             output.push(jsonarray[i]);
             output.push('</option>');
         }
+        output.push('<option value="" disabled>------</option>');
+        output.push('<option value="喝一杯水">喝一杯水</option>');
         var outputString = output.join("");
         return outputString;
     };
@@ -43,7 +43,7 @@
         content = outputLocation(data.place);
         idName = 'place';
         document.getElementById(idName).innerHTML = content;
-        content = outputSelect(data.recent, 'create', 'Last 3 Tasks');
+        content = outputRecent(data.recent, 'create', 'Last 3 Tasks');
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
     });
