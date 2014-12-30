@@ -7,7 +7,7 @@
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<div>');
             output.push(jsonarray[i]);
-            output.push('<button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;">Done</button>');
+            output.push('<button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;">DONE</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
             output.push('</div>');
@@ -43,7 +43,7 @@
         content = outputLocation(data.place);
         idName = 'place';
         document.getElementById(idName).innerHTML = content;
-        content = outputSelect(data.recent, 'create', 'Recent Tasks');
+        content = outputSelect(data.recent, 'create', 'Last 3 Tasks');
         idName = 'recent';
         document.getElementById(idName).innerHTML = content;
     });
@@ -71,18 +71,18 @@
             textarea.val('✓');
         }
         if (textarea.val()) {
-            $(this).text('Clear');
+            $(this).text('CLEAR');
         } else {
-            $(this).text('Done');
+            $(this).text('DONE');
         }
     });
 
     $(document).on("blur keyup", 'textarea', function(){
         var button = $(this).parent().find('button.done');
         if ($(this).val()) {
-            button.text('Clear');
+            button.text('CLEAR');
         } else {
-            button.text('Done');
+            button.text('DONE');
         }
     });
 

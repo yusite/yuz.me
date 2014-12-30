@@ -12,7 +12,7 @@ Pushing forward!
 
 <form id="form" method="GET" action="#">
 
-<h3><strong>1. 执行中</strong></h3>
+<h3><strong>1. 执行中</strong> <a href="https://docs.google.com/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/pubhtml?gid=0&single=true" target="_blank">Archives</a></h3>
 <div id="log" style="font-size:20px;">...</div>
 
 <h3><strong>2. 新建</strong> in
@@ -22,7 +22,9 @@ Pushing forward!
 <option selected value="">Loading...</option>
 </select>
 <br>
-<input type="text" name="create" style="font-size:18px;margin-top:10px;">
+<input type="text" name="create" style="font-size:18px;margin-top:10px;" placeholder="Task name">
+<br>
+<textarea name="comment" rows="2" style="font-size:18px;margin-top:10px;" placeholder="Leave a comment"></textarea>
 </h3>
 
 <hr>
