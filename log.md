@@ -22,9 +22,9 @@ Pushing forward!
 <option selected value="">Loading...</option>
 </select>
 <br>
-<input type="text" name="create" style="font-size:18px;margin-top:10px;" placeholder="Task name">
+<input type="text" name="create" style="font-size:18px;margin-top:10px;" placeholder="Task">
 <br>
-<textarea name="comment" rows="2" style="font-size:18px;margin-top:10px;" placeholder="Leave a comment"></textarea>
+<input type="text" name="comment" style="font-size:18px;margin-top:10px;" placeholder="Comment">
 </h3>
 
 <hr>
