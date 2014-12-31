@@ -13,7 +13,7 @@ Pushing forward!
 <form id="form" method="GET" action="#">
 
 <h3><strong>1. 执行中</strong> &middot; <a href="https://docs.google.com/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/pubhtml?gid=0&single=true" target="_blank">Archives</a> &middot; 
-<a href="http://l.yuz.me/hist/" target="_blank">Update</a></h3>
+<a href="http://l.yuz.me/hist/" target="_blank">Edit</a></h3>
 <div id="log" style="font-size:20px;">...</div>
 
 <h3><strong>2. 新建任务</strong> in
