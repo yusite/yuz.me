@@ -16,7 +16,7 @@ Pushing forward!
 <a href="http://l.yuz.me/hist/" target="_blank">Edit</a></h3>
 <div id="log" style="font-size:20px;">...</div>
 
-<h3><strong>2. 新建任务</strong> in
+<h3><strong>2. 新任务</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">...</a>
 <br>
 <select name="create" id="recent" style="font-size:16px;margin-top:10px;width:200px;">
