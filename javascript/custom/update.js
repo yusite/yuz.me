@@ -7,11 +7,12 @@
         for (i = 0; i < dataArray.length; i++) {
             var task = dataArray[i];
             output.push('<div>');
-            output.push(task.Name);
-            output.push(' ( id: <input type="text" name="rid" value="');
+            output.push('<input type="text" name="rid" value="');
             output.push(task.Rid);
-            output.push('" style="font-size:18px;width:40px;" readonly> )<br>');
-            output.push('<textarea name="summary" rows="2" style="font-size:18px;margin-top:10px;">');
+            output.push('" style="font-size:16px;width:30px;" readonly> ');
+            output.push(task.Name);
+            output.push('<br>');
+            output.push('<textarea name="summary" rows="2" style="font-size:18px;margin-top:5px;">');
             output.push(task.Summary);
             output.push('</textarea>');
             output.push('</div>');
