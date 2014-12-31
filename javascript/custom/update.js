@@ -10,7 +10,7 @@
             output.push('<input type="text" name="rid" value="');
             output.push(task.Rid);
             output.push('" style="font-size:16px;width:35px;" readonly> ');
-            output.push(task.Name);
+            output.push(task.Name + ' ' + task.End);
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:16px;margin-top:5px;">');
             output.push(task.Summary);
