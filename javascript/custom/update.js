@@ -9,7 +9,7 @@
             output.push('<div>');
             output.push('<input type="text" name="rid" value="');
             output.push(task.Rid);
-            output.push('" style="font-size:16px;width:30px;" readonly> ');
+            output.push('" style="font-size:16px;width:38px;" readonly> ');
             output.push(task.Name);
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:16px;margin-top:5px;">');
