@@ -2,6 +2,14 @@
     var google = "https://script.google.com/macros/s/AKfycbz6oLGBd7N1rNmxcOzClQ0SWHyAd8z37bXTeAy9UkmMmj6MzD4/exec";
     var displayUrl = google + "?oldlist=?";
 
+    function getTimeString(time) {
+        var i, output = [];
+        for (i = 11; i < 16; i++) {
+            output.push(time[i]);
+        }
+        return output.join('');
+    }
+
     function outputRecords(dataArray) {
         var i, output = [];
         for (i = 0; i < dataArray.length; i++) {
@@ -10,7 +18,7 @@
             output.push('<input type="text" name="rid" value="');
             output.push(task.Rid);
             output.push('" style="font-size:16px;width:35px;" readonly> ');
-            output.push(task.Name + ' ' + task.End);
+            output.push(task.Name + ' ' + getTimeString(task.End));
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:16px;margin-top:5px;">');
             output.push(task.Summary);
