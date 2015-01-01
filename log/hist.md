@@ -2,7 +2,9 @@
 layout: page
 title: 做该做的事！
 sidebar: ignore
-script: /javascript/custom/update.js
+script:
+- /javascript/library/jquery.autosize.min.js
+- /javascript/custom/update.js
 
 ---
 

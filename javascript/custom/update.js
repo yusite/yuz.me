@@ -25,7 +25,7 @@
             output.push('" style="font-size:16px;width:35px;" readonly> ');
             output.push(task.Name + '（' + getTimeString(task.Begin) + '~' + getTimeString(task.End) + '）');
             output.push('<br>');
-            output.push('<textarea name="summary" rows="2" style="font-size:16px;margin-top:5px;">');
+            output.push('<textarea name="summary" rows="1" style="font-size:16px;margin-top:5px;">');
             output.push(task.Summary);
             output.push('</textarea>');
             output.push('</div>');
@@ -52,6 +52,10 @@
             $('#send').html('<span style="color:red;">Done!</span>');
             location.reload();
         });
+    });
+
+    $(document).on("blur keyup focus", 'textarea', function(){
+        $(this).autosize();
     });
 
 })();

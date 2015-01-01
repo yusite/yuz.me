@@ -2,7 +2,9 @@
 layout: page
 title: 做该做的事！
 sidebar: ignore
-script: /javascript/custom/log.js
+script:
+- /javascript/library/jquery.autosize.min.js
+- /javascript/custom/log.js
 
 ---
 
@@ -22,14 +24,13 @@ Pushing forward!
 <select name="create" id="recent" style="font-size:16px;margin-top:10px;width:175px;">
 <option selected value="">快速添加</option>
 <option value="喝一杯水">喝一杯水</option>
-<option value="学习 PHP">学习 PHP</option>
 <option value="休息一下">休息一下</option>
 <option value="" disabled>--- 最近 3 个任务 ---</option>
 </select>
 <br>
 <input type="text" name="create" style="font-size:18px;margin-top:6px;" placeholder="name">
 <br>
-<textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;" placeholder="comment"></textarea>
+<textarea name="comment" rows="1" style="font-size:18px;margin-top:6px;" placeholder="comment"></textarea>
 </h3>
 
 <hr>

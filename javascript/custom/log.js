@@ -9,7 +9,7 @@
             output.push(jsonarray[i]);
             output.push('<button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;">DONE</button>');
             output.push('<br>');
-            output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
+            output.push('<textarea name="summary" rows="1" style="font-size:18px;"></textarea>');
             output.push('</div>');
         }
         var outputString = output.join("");
@@ -36,7 +36,7 @@
     $.getJSON(displayUrl).done(function(data) {
         var content = outputDoing(data.doing);
         if (content) {
-            $('#doing').html('content');
+            $('#doing').html(content);
         } else {
             $('#doing').html('无任务');
         }
@@ -73,15 +73,17 @@
         } else {
             $(this).text('DONE');
         }
+        textarea.trigger('autosize.resize');
     });
 
-    $(document).on("blur keyup", 'textarea', function(){
+    $(document).on("blur keyup focus", 'textarea', function(){
         var button = $(this).parent().find('button.done');
         if ($(this).val()) {
             button.text('CLEAR');
         } else {
             button.text('DONE');
         }
+        $(this).autosize();
     });
 
 })();
