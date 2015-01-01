@@ -14,20 +14,18 @@ Pushing forward!
 
 <form id="form" method="GET" action="#">
 
-<h3><strong>1. 执行中</strong> &middot; <a href="https://docs.google.com/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/pubhtml?gid=0&single=true" target="_blank">Archives</a> &middot; 
-<a href="http://l.yuz.me/hist/" target="_blank">Edit</a></h3>
+<h3><strong>1. 执行中</strong> &middot;
+<a href="http://l.yuz.me/hist/" target="_blank">改</a></h3>
 <div id="doing" style="font-size:20px;">加载中……</div>
 
 <h3><strong>2. 新任务</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">……</a>
 <br>
-<select name="create" id="recent" style="font-size:16px;margin-top:10px;width:190px;">
+<select name="create" id="recent" style="font-size:18px;margin-top:10px;">
 <option selected value="">快速添加</option>
 </select>
 <br>
-<textarea name="create" rows="1" style="font-size:18px;margin-top:10px;width:190px;"></textarea>
-<br>
-<textarea id="auto" name="comment" rows="2" style="font-size:18px;margin-top:6px;"></textarea>
+<input type="text" name="create" style="font-size:18px;margin-top:5px;">
 </h3>
 
 <hr>
