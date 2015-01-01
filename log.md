@@ -21,11 +21,11 @@ Pushing forward!
 <h3><strong>2. 新任务</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">……</a>
 <br>
-<select name="create" id="recent" style="font-size:16px;margin-top:10px;width:175px;">
+<select name="create" id="recent" style="font-size:16px;margin-top:10px;width:180px;">
 <option selected value="">快速添加</option>
 </select>
 <br>
-<input type="text" name="create" style="font-size:18px;margin-top:6px;" placeholder="name">
+<input type="text" name="create" style="font-size:18px;margin-top:6px;width:180px;" placeholder="name">
 <br>
 <textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;" placeholder="comment"></textarea>
 </h3>
