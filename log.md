@@ -27,7 +27,7 @@ Pushing forward!
 <br>
 <input type="text" name="create" style="font-size:18px;margin-top:6px;width:190px;" placeholder="name">
 <br>
-<textarea name="comment" rows="1" style="font-size:18px;margin-top:6px;"></textarea>
+<textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;"></textarea>
 </h3>
 
 <hr>
