@@ -14,18 +14,22 @@ Pushing forward!
 
 <h3><strong>1. 执行中</strong> &middot; <a href="https://docs.google.com/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/pubhtml?gid=0&single=true" target="_blank">Archives</a> &middot; 
 <a href="http://l.yuz.me/hist/" target="_blank">Edit</a></h3>
-<div id="log" style="font-size:20px;">...</div>
+<div id="doing" style="font-size:20px;">加载中……</div>
 
 <h3><strong>2. 新任务</strong> in
-<a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">...</a>
+<a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">……</a>
 <br>
-<select name="create" id="recent" style="font-size:16px;margin-top:10px;width:200px;">
-<option selected value="">Loading...</option>
+<select name="create" id="recent" style="font-size:16px;margin-top:10px;width:175px;">
+<option selected value="">快速添加</option>
+<option value="喝一杯水">喝一杯水</option>
+<option value="学习 PHP">学习 PHP</option>
+<option value="休息一下">休息一下</option>
+<option value="" disabled>--- 最近 3 个任务 ---</option>
 </select>
 <br>
-<input type="text" name="create" style="font-size:18px;margin-top:10px;" placeholder="name">
+<input type="text" name="create" style="font-size:18px;margin-top:6px;" placeholder="name">
 <br>
-<textarea name="comment" rows="2" style="font-size:18px;margin-top:8px;" placeholder="comment"></textarea>
+<textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;" placeholder="comment"></textarea>
 </h3>
 
 <hr>
