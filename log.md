@@ -30,7 +30,7 @@ Pushing forward!
 <br>
 <input type="text" name="create" style="font-size:18px;margin-top:6px;" placeholder="name">
 <br>
-<textarea name="comment" rows="1" style="font-size:18px;margin-top:6px;" placeholder="comment"></textarea>
+<textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;" placeholder="comment"></textarea>
 </h3>
 
 <hr>
