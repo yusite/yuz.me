@@ -25,7 +25,7 @@ Pushing forward!
 <option selected value="">快速添加</option>
 </select>
 <br>
-<input type="text" name="create" style="font-size:18px;margin-top:6px;width:190px;" placeholder="Task name">
+<input type="text" name="create" style="font-size:18px;margin-top:6px;width:190px;" placeholder="Task Name">
 <br>
 <textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;"></textarea>
 </h3>
