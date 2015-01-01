@@ -14,8 +14,8 @@ Pushing forward!
 
 <form id="form" method="GET" action="#">
 
-<h3><strong>1. 执行中</strong> &middot;
-<a href="http://l.yuz.me/hist/" target="_blank">修改</a></h3>
+<h3><strong>1. 执行中</strong>
+<a href="http://l.yuz.me/hist/" target="_blank">✑</a></h3>
 <div id="doing" style="font-size:20px;">加载中……</div>
 
 <h3><strong>2. 新任务</strong> in
