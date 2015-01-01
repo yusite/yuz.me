@@ -27,7 +27,7 @@ Pushing forward!
 <br>
 <textarea name="create" rows="1" style="font-size:18px;margin-top:10px;width:190px;"></textarea>
 <br>
-<textarea name="comment" rows="2" style="font-size:18px;margin-top:6px;"></textarea>
+<textarea id="auto" name="comment" rows="2" style="font-size:18px;margin-top:6px;"></textarea>
 </h3>
 
 <hr>
