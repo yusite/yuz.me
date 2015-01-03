@@ -9,8 +9,8 @@
             output.push('<span class="taskName">');
             output.push(jsonarray[i]);
             output.push('</span> ');
-            output.push('<button class="repeat" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;padding:0;">REPEAT</button> ');
-            output.push('<button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;padding:0;">DONE</button>');
+            output.push('<button class="repeat" type="button" style="font-size:16px;border:0;background:none;color:#268bd2;padding:0;">REPEAT</button> ');
+            output.push('<button class="done" type="button" style="font-size:16px;border:0;background:none;color:#268bd2;padding:0;">DONE</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="1" style="font-size:18px;"></textarea>');
             output.push('</div>');
