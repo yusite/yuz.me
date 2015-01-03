@@ -15,7 +15,7 @@ Pushing forward!
 <form id="form" method="GET" action="#">
 
 <h3><strong>1. 执行中</strong>
-<a href="http://l.yuz.me/hist/" target="_blank">Summary</a></h3>
+<a href="http://l.yuz.me/hist/" target="_blank">History</a></h3>
 <div id="doing" style="font-size:20px;">加载中……</div>
 
 <h3><strong>2. 新任务</strong> in
@@ -25,7 +25,7 @@ Pushing forward!
 <option selected value="">快速添加</option>
 </select>
 <br>
-<input type="text" name="create" style="font-size:18px;margin-top:5px;">
+<input id="create" type="text" name="create" style="font-size:18px;margin-top:5px;">
 </h3>
 
 <hr>

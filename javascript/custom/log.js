@@ -6,8 +6,11 @@
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<div>');
+            output.push('<span class="taskName">');
             output.push(jsonarray[i]);
+            output.push('</span> ');
             output.push('<button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;">DONE</button>');
+            output.push('<button class="repeat" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;">↺</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="1" style="font-size:18px;"></textarea>');
             output.push('</div>');
@@ -63,6 +66,7 @@
     $(document).on("click", 'button.done', function(event){
         event.preventDefault();
         var textarea = $(this).parent().find("textarea");
+        var nameValue = $(this).parent().find(".taskName").text();
         if (textarea.val()) {
             textarea.val('');
         } else {
@@ -73,7 +77,23 @@
         } else {
             $(this).text('DONE');
         }
+        if (nameValue == $('#create').val() && !textarea.val()) {
+            $('#create').val('');
+        }
         textarea.trigger('autosize.resize');
+    });
+
+    $(document).on("click", 'button.repeat', function(event){
+        event.preventDefault();
+        var parent = $(this).parent();
+        var nameValue = parent.find(".taskName").text();
+        var text = parent.find("textarea");
+        var button = parent.find("button.done");
+        if (!text.val()) {
+            text.val('✓');
+            button.text('CLEAR');
+        }
+        $('#create').val(nameValue);
     });
 
     $(document).on("blur keyup focus", 'textarea', function(){
