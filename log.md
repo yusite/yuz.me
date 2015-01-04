@@ -23,13 +23,13 @@ Pushing forward!
 <br>
 <input id="create" type="text" name="create" style="font-size:18px;margin-top:10px;">
 <br>
-<select name="create" id="recent" style="font-size:16px;margin-top:6px;">
+<select name="create" id="recent" style="font-size:16px;margin-top:8px;">
 <option selected value="">快速添加</option>
 <option value="喝水一杯：双鱼杯">喝水一杯：双鱼杯</option>
 <option value="保持个人卫生">保持个人卫生</option>
 </select>
 <br>
-<select name="comment" id="belong" style="font-size:16px;margin-top:6px;">
+<select name="comment" id="belong" style="font-size:16px;margin-top:8px;">
 <option selected value="">从属于</option>
 </select>
 </h3>
