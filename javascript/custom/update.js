@@ -25,7 +25,7 @@
             output.push('" style="font-size:16px;width:35px;" readonly> ');
             output.push('<input type="text" name="name" value="');
             output.push(task.Name);
-            output.push('" style="font-size:18px;width:200px;"> ');
+            output.push('" style="font-size:18px;width:280px;"> ');
             output.push(getTimeString(task.Begin) + '~' + getTimeString(task.End));
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:20px;margin-top:5px;width:320px;">');
