@@ -23,6 +23,9 @@ Pushing forward!
 <br>
 <select name="create" id="recent" style="font-size:18px;margin-top:10px;">
 <option selected value="">快速添加</option>
+<option value="喝水一杯：双鱼杯">喝水一杯：双鱼杯</option>
+<option value="注意休息">注意休息</option>
+<option value="保持个人卫生">保持个人卫生</option>
 </select>
 <br>
 <input id="create" type="text" name="create" style="font-size:18px;margin-top:5px;">
