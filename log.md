@@ -21,14 +21,17 @@ Pushing forward!
 <h3><strong>2. 新任务</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">……</a>
 <br>
-<select name="create" id="recent" style="font-size:18px;margin-top:10px;">
+<input id="create" type="text" name="create" style="font-size:18px;margin-top:10px;">
+<br>
+<select name="create" id="recent" style="font-size:18px;margin-top:6px;">
 <option selected value="">快速添加</option>
 <option value="喝水一杯：双鱼杯">喝水一杯：双鱼杯</option>
-<option value="注意休息">注意休息</option>
 <option value="保持个人卫生">保持个人卫生</option>
 </select>
 <br>
-<input id="create" type="text" name="create" style="font-size:18px;margin-top:5px;">
+<select name="comment" id="belong" style="font-size:18px;margin-top:6px;">
+<option selected value="">从属于</option>
+</select>
 </h3>
 
 <hr>

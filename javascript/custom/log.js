@@ -19,10 +19,12 @@
         return outputString;
     };
 
-    var outputOptions = function(jsonarray) {
+    var outputOptions = function(jsonarray, comment) {
+        comment = comment || '';
         var i, output = [];
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
+            output.push(comment);
             output.push(jsonarray[i]);
             output.push('">');
             output.push(jsonarray[i]);
@@ -47,6 +49,8 @@
         $('#place').html(content);
         content = outputOptions(data.recent);
         $("#recent").append(content);
+        content = outputOptions(data.doing, '∈ ');
+        $("#belong").append(content);
     });
 
     $(document).on("click", '#submit', function(event){
