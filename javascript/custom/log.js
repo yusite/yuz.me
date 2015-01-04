@@ -19,9 +19,10 @@
         return outputString;
     };
 
-    var outputOptions = function(jsonarray, comment) {
+    var outputOptions = function(jsonarray, title, comment) {
         comment = comment || '';
         var i, output = [];
+        output.push('<option selected value="">' + title + '</option>');
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
             output.push(comment);
@@ -47,10 +48,10 @@
         }
         content = outputLocation(data.place);
         $('#place').html(content);
-        content = outputOptions(data.recent);
-        $("#recent").append(content);
-        content = outputOptions(data.doing, '∈ ');
-        $("#belong").append(content);
+        content = outputOptions(data.recent, '快速添加');
+        $("#recent").html(content);
+        content = outputOptions(data.doing, '包含于', '∈ ');
+        $("#belong").html(content);
     });
 
     $(document).on("click", '#submit', function(event){
@@ -62,9 +63,26 @@
         command.push('&state=?');
         $('#send').html('<span style="color:green;">Sending...</span>');
         $.getJSON(command.join('')).done(function(data) {
-            $('#send').html('<span style="color:red;">Done!</span>');
-            location.reload();
+            $.getJSON(displayUrl).done(function(data) {
+                var content = outputDoing(data.doing);
+                if (content) {
+                    $('#doing').html(content);
+                } else {
+                    $('#doing').html('无任务');
+                }
+                content = outputLocation(data.place);
+                $('#place').html(content);
+                content = outputOptions(data.recent, '快速添加');
+                $("#recent").html(content);
+                content = outputOptions(data.doing, '包含于', '∈ ');
+                $("#belong").html(content);
+                $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
+            });
         });
+        $('input#create').val('');
+        $('#doing').html('加载中……');
+        $('#recent').html('<option selected value="">加载中……</option>');
+        $('#belong').html('<option selected value="">加载中……</option>');
     });
 
     $(document).on("click", 'button.done', function(event){
