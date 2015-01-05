@@ -21,8 +21,11 @@
 
     var outputOptions = function(jsonarray, title, comment) {
         comment = comment || '';
+        title = title || '';
         var i, output = [];
-        output.push('<option selected value="">' + title + '</option>');
+        if (title) {
+            output.push('<option value="">' + title + '</option>');
+        }
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<option value="');
             output.push(comment);
@@ -72,17 +75,30 @@
                 }
                 content = outputLocation(data.place);
                 $('#place').html(content);
-                content = outputOptions(data.recent, '快速添加');
-                $("#recent").html(content);
-                content = outputOptions(data.doing, '包含于', '∈ ');
-                $("#belong").html(content);
+                content = outputOptions(data.recent);
+                $("#recent").append(content);
+                content = outputOptions(data.doing, '', '∈ ');
+                $("#belong").append(content);
                 $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
             });
         });
+        var array = $('#form').serializeArray();
         $('input#create').val('');
         $('#doing').html('加载中……');
-        $('#recent').html('<option selected value="">加载中……</option>');
-        $('#belong').html('<option selected value="">加载中……</option>');
+        $('#recent').html('<option value="">快速添加</option>');
+
+        var i, create = [];
+        for (i = 0; i < array.length; i++) {
+            if (array[i].name == "create" && array[i].value !== '') {
+                create.push(array[i].value);
+            }
+        }
+        var createString = create.join(', ');
+        if (createString.indexOf('父') > -1) {
+            $('#belong').html('<option value="∈ ' + createString + '">' + createString + '</option><option value="">取消</option>');
+        } else {
+            $('#belong').html('<option value="">包含于</option>');
+        }
     });
 
     $(document).on("click", 'button.done', function(event){
