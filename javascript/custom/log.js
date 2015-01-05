@@ -4,15 +4,24 @@
 
     var outputDoing = function(jsonarray) {
         var i, output = [];
+        var style = 'style="font-size:18px;border:0;background:none;color:#268bd2;padding:0;"';
+        var middot = ' &middot; ';
         for (i = 0; i < jsonarray.length; i++) {
             output.push('<div>');
             output.push('<span class="taskName">');
             output.push(jsonarray[i]);
-            output.push('</span> ');
-            output.push('<button class="repeat" style="font-size:16px;border:0;background:none;color:#268bd2;padding:0;">REPEAT</button> ');
-            output.push('<button class="done" style="font-size:16px;border:0;background:none;color:#268bd2;padding:0;">DONE</button>');
+            output.push('</span>&nbsp;&nbsp;');
+            output.push('( <button class="repeat" ' + style + '>RE</button>');
+            output.push(middot);
+
+            if (jsonarray[i].indexOf("∈") === -1) {
+                output.push('<button class="father" ' + style + '>FA</button>');
+                output.push(middot);
+            }
+
+            output.push('<button class="done" ' + style + '>DONE</button> )');
             output.push('<br>');
-            output.push('<textarea name="summary" rows="1" style="font-size:18px;"></textarea>');
+            output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
             output.push('</div>');
         }
         var outputString = output.join("");
@@ -52,8 +61,6 @@
         }
         content = outputOptions(data.recent, '快速添加');
         $("#recent").html(content);
-        content = outputOptions(data.doing, '包含于', '∈ ');
-        $("#belong").html(content);
         content = outputLocation(data.place);
         $('#place').html(content);
     });
@@ -75,8 +82,6 @@
             }
             content = outputOptions(data.recent, '快速添加');
             $("#recent").html(content);
-            content = outputOptions(data.doing, '包含于', '∈ ');
-            $("#belong").html(content);
             content = outputLocation(data.place);
             $('#place').html(content);
             $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
@@ -84,9 +89,8 @@
 
         $('#send').html('<span style="color:red;">Sending...</span>');
         $('#doing').html('加载中……');
-        $('#create').val('');
         $('#recent').html('<option value="">加载中……</option>');
-        $('#belong').html('<option value="">加载中……</option>');
+        $('#create').val('');
     });
 
     $(document).on("click", 'button.done', function(event){
@@ -107,6 +111,17 @@
             $('#create').val('');
         }
         textarea.trigger('autosize.resize');
+    });
+
+    $(document).on("click", 'button.father', function(event){
+        event.preventDefault();
+        if ($('#belong').val()) {
+            $('#belong').val('');
+        } else {
+            var parent = $(this).parent();
+            var nameValue = '∈ ' + parent.find(".taskName").text();
+            $('#belong').val(nameValue);
+        }
     });
 
     $(document).on("click", 'button.repeat', function(event){
