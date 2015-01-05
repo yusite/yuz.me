@@ -66,6 +66,7 @@
         command.push('&state=?');
         $('#send').html('<span style="color:green;">Sending...</span>');
         $.getJSON(command.join('')).done(function(data) {
+            $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
             $.getJSON(displayUrl).done(function(data) {
                 var content = outputDoing(data.doing);
                 if (content) {
@@ -79,7 +80,6 @@
                 $("#recent").append(content);
                 content = outputOptions(data.doing, '', '∈ ');
                 $("#belong").append(content);
-                $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
             });
         });
         var array = $('#form').serializeArray();
