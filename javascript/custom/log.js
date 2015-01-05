@@ -110,17 +110,25 @@
         if (nameValue == $('#create').val() && !textarea.val()) {
             $('#create').val('');
         }
+        var testValue = '∈ ' + nameValue;
+        if (testValue == $('#belong').val()) {
+            $('#belong').val('');
+        }
         textarea.trigger('autosize.resize');
     });
 
     $(document).on("click", 'button.father', function(event){
         event.preventDefault();
-        if ($('#belong').val()) {
-            $('#belong').val('');
-        } else {
-            var parent = $(this).parent();
-            var nameValue = '∈ ' + parent.find(".taskName").text();
+        var parent = $(this).parent();
+        var taskname = parent.find(".taskName").text();
+        var nameValue = '∈ ' + taskname;
+
+        if ($('#belong').val() === '') {
             $('#belong').val(nameValue);
+        } else if ($('#belong').val() !== '' && $('#belong').val() !== nameValue) {
+            $('#belong').val(nameValue);
+        } else {
+            $('#belong').val('');
         }
     });
 
@@ -145,6 +153,10 @@
             button.text('DONE');
         }
         $(this).autosize();
+    });
+
+    $(document).on("focus", '#belong', function(){
+        $(this).val('');
     });
 
 })();
