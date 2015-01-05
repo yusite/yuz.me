@@ -91,6 +91,10 @@ $(document).on("click", '#submit', function(event){
     $('#doing').html('加载中……');
     $('#recent').html('<option value="">加载中……</option>');
     $('#create').val('');
+    if ($('#belong').val().indexOf('F! ') !== -1) {
+        var task = '∈ ' + $('#belong').val().split('F! ').pop();
+        $('#belong').val(task);
+    }
 });
 
 $(document).on("click", 'button.done', function(event){
