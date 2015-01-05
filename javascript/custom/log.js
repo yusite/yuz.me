@@ -99,7 +99,7 @@ $(document).on("click", 'button.done', function(event){
     var nameValue = $(this).parent().find(".taskName").text();
     if (textarea.val()) {
         textarea.val('');
-        if (nameValue.split(', ∈').shift() == $('#create').val()) {
+        if (nameValue.split(', ∈').shift() == $('#create').val() || ('∈' + nameValue.split(', ∈').pop()) == $('#belong').val()) {
             $('#belong').val('');
             $('#create').val('');
         }
