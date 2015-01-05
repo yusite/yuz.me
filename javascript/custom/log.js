@@ -138,11 +138,19 @@
         var nameValue = parent.find(".taskName").text();
         var text = parent.find("textarea");
         var button = parent.find("button.done");
+
         if (!text.val()) {
             text.val('✓');
             button.text('CLEAR');
         }
-        $('#create').val(nameValue);
+        $('#create').val(nameValue.split(', ∈').shift());
+
+        if (nameValue.indexOf('∈') === -1) {
+            $('#belong').val('');
+        } else {
+            var belong = '∈' + nameValue.split('∈').pop();
+            $('#belong').val(belong);
+        }
     });
 
     $(document).on("blur keyup focus", 'textarea', function(){
@@ -155,7 +163,7 @@
         $(this).autosize();
     });
 
-    $(document).on("focus", '#belong', function(){
+    $(document).on("focus", '#belong, #create', function(){
         $(this).val('');
     });
 
