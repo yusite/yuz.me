@@ -9,8 +9,8 @@
             output.push('<span class="taskName">');
             output.push(jsonarray[i]);
             output.push('</span> ');
-            output.push('<button class="repeat" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;padding:0;">REPEAT</button> ');
-            output.push('<button class="done" type="button" style="font-size:18px;border:0;background:none;color:#268bd2;padding:0;">DONE</button>');
+            output.push('<button class="repeat" style="font-size:16px;border:0;background:none;color:#268bd2;padding:0;">REPEAT</button> ');
+            output.push('<button class="done" style="font-size:16px;border:0;background:none;color:#268bd2;padding:0;">DONE</button>');
             output.push('<br>');
             output.push('<textarea name="summary" rows="1" style="font-size:18px;"></textarea>');
             output.push('</div>');
@@ -20,8 +20,9 @@
     };
 
     var outputOptions = function(jsonarray, title, comment) {
-        comment = comment || '';
         title = title || '';
+        comment = comment || '';
+
         var i, output = [];
         if (title) {
             output.push('<option value="">' + title + '</option>');
@@ -49,12 +50,12 @@
         } else {
             $('#doing').html('无任务');
         }
-        content = outputLocation(data.place);
-        $('#place').html(content);
         content = outputOptions(data.recent, '快速添加');
         $("#recent").html(content);
         content = outputOptions(data.doing, '包含于', '∈ ');
         $("#belong").html(content);
+        content = outputLocation(data.place);
+        $('#place').html(content);
     });
 
     $(document).on("click", '#submit', function(event){
@@ -63,42 +64,29 @@
         command.push(google);
         command.push('?');
         command.push($('#form').serialize());
-        command.push('&state=?');
-        $('#send').html('<span style="color:green;">Sending...</span>');
-        $.getJSON(command.join('')).done(function(data) {
-            $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
-            $.getJSON(displayUrl).done(function(data) {
-                var content = outputDoing(data.doing);
-                if (content) {
-                    $('#doing').html(content);
-                } else {
-                    $('#doing').html('无任务');
-                }
-                content = outputLocation(data.place);
-                $('#place').html(content);
-                content = outputOptions(data.recent);
-                $("#recent").append(content);
-                content = outputOptions(data.doing, '', '∈ ');
-                $("#belong").append(content);
-            });
-        });
-        var array = $('#form').serializeArray();
-        $('input#create').val('');
-        $('#doing').html('加载中……');
-        $('#recent').html('<option value="">快速添加</option>');
+        command.push('&display=?');
 
-        var i, create = [];
-        for (i = 0; i < array.length; i++) {
-            if (array[i].name == "create" && array[i].value !== '') {
-                create.push(array[i].value);
+        $.getJSON(command.join('')).done(function(data) {
+            var content = outputDoing(data.doing);
+            if (content) {
+                $('#doing').html(content);
+            } else {
+                $('#doing').html('无任务');
             }
-        }
-        var createString = create.join(', ');
-        if (createString.indexOf('父') > -1) {
-            $('#belong').html('<option value="∈ ' + createString + '">' + createString + '</option><option value="">取消</option>');
-        } else {
-            $('#belong').html('<option value="">包含于</option>');
-        }
+            content = outputOptions(data.recent, '快速添加');
+            $("#recent").html(content);
+            content = outputOptions(data.doing, '包含于', '∈ ');
+            $("#belong").html(content);
+            content = outputLocation(data.place);
+            $('#place').html(content);
+            $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
+        });
+
+        $('#send').html('<span style="color:red;">Sending...</span>');
+        $('#doing').html('加载中……');
+        $('#create').val('');
+        $('#recent').html('<option value="">加载中……</option>');
+        $('#belong').html('<option value="">加载中……</option>');
     });
 
     $(document).on("click", 'button.done', function(event){
