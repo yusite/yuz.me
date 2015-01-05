@@ -13,13 +13,14 @@
             output.push('</span>&nbsp;&nbsp;');
             output.push('( <button class="repeat" ' + style + '>RE</button>');
             output.push(middot);
+            output.push('<button class="done" ' + style + '>DONE</button>');
 
             if (jsonarray[i].indexOf("∈") === -1) {
-                output.push('<button class="father" ' + style + '>FA</button>');
                 output.push(middot);
+                output.push('<button class="father" ' + style + '>FA</button>');
             }
 
-            output.push('<button class="done" ' + style + '>DONE</button> )');
+            output.push(' )');
             output.push('<br>');
             output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
             output.push('</div>');
