@@ -93,7 +93,7 @@
         $('#create').val('');
     });
 
-    $(document).on("click", 'button.done', function(event){
+    $(document).on("mouseup touchend", 'button.done', function(event){
         event.preventDefault();
         var textarea = $(this).parent().find("textarea");
         var nameValue = $(this).parent().find(".taskName").text();
@@ -117,7 +117,7 @@
         textarea.trigger('autosize.resize');
     });
 
-    $(document).on("click", 'button.father', function(event){
+    $(document).on("mouseup touchend", 'button.father', function(event){
         event.preventDefault();
         var parent = $(this).parent();
         var taskname = parent.find(".taskName").text();
@@ -132,7 +132,7 @@
         }
     });
 
-    $(document).on("click", 'button.repeat', function(event){
+    $(document).on("mouseup touchend", 'button.repeat', function(event){
         event.preventDefault();
         var parent = $(this).parent();
         var nameValue = parent.find(".taskName").text();
@@ -163,7 +163,7 @@
         $(this).autosize();
     });
 
-    $(document).on("focus", '#belong, #create', function(){
+    $(document).on("focus", '#belong', function(){
         $(this).val('');
     });
 
