@@ -161,6 +161,7 @@ $(document).on("blur keyup focus", 'textarea', function(){
         var text = '∈ ' + $(this).parent().find('.taskName').text();
         if (text == $('#belong').val()) {
             $('#belong').val('');
+            $('#create').val('');
         }
     } else {
         button.text('DONE');
