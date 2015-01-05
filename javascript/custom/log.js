@@ -163,7 +163,7 @@
         $(this).autosize();
     });
 
-    $(document).on("focus", '#belong', function(){
+    $(document).on("focus", '#belong, #create', function(){
         $(this).val('');
     });
 
