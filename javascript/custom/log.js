@@ -99,12 +99,16 @@ $(document).on("click", 'button.done', function(event){
     var nameValue = $(this).parent().find(".taskName").text();
     if (textarea.val()) {
         textarea.val('');
-        if (nameValue.split(', ∈').shift() == $('#create').val() || '∈ ' + nameValue == $('#belong').val()) {
+        if (nameValue.split(', ∈').shift() == $('#create').val()) {
             $('#belong').val('');
             $('#create').val('');
         }
     } else {
         textarea.val('✓');
+        if ('∈ ' + nameValue == $('#belong').val()) {
+            $('#belong').val('');
+            $('#create').val('');
+        }
     }
     if (textarea.val()) {
         $(this).text('CLEAR');
