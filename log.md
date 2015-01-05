@@ -25,7 +25,7 @@ Pushing forward!
 <option selected value="">加载中……</option>
 </select>
 <br>
-<input id="create" type="text" name="create" style="font-size:18px;margin-top:8px;" placeholder="名称">
+<input id="create" type="text" name="create" style="font-size:18px;margin-top:8px;">
 <br>
 <input id="belong" type="text" name="comment" style="font-size:16px;margin-top:8px;color:green;" placeholder="包含于 或 备注">
 </h3>
