@@ -21,13 +21,13 @@ Pushing forward!
 <h3><strong>2. 新任务</strong> in
 <a href="https://docs.google.com/a/yuz.me/spreadsheets/d/1Ls3l7bvsyFznq73eSwJL7tkeAbV0PalBBnX0gQFn5DU/edit#gid=2010321559" id="place">……</a>
 <br>
-<select id="recent" name="create" style="font-size:16px;margin-top:10px;">
+<input id="create" type="text" name="create" style="font-size:18px;margin-top:10px;">
+<br>
+<select id="recent" name="create" style="font-size:16px;margin-top:12px;">
 <option selected value="">加载中……</option>
 </select>
 <br>
 <input id="belong" type="text" name="comment" style="font-size:16px;margin-top:8px;color:green;" placeholder="包含于 或 备注">
-<br>
-<input id="create" type="text" name="create" style="font-size:18px;margin-top:12px;">
 </h3>
 
 <hr>
