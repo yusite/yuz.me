@@ -88,8 +88,6 @@ $(document).on("click", '#submit', function(event){
     });
 
     $('#send').html('<span style="color:red;">Sending...</span>');
-    $('#doing').html('加载中……');
-    $('#recent').html('<option value="">加载中……</option>');
     $('#create').val('');
     if ($('#belong').val().search(/^f!\s*|^父！\s*/ig) !== -1) {
         var task = '∈ ' + $('#belong').val().split(/^f!\s*|^父！\s*/ig).pop();
