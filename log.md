@@ -37,9 +37,7 @@ Pushing forward!
 </p>
 </form>
 
----
-
-<table>
+<table style="margin-top:40px;">
   <tbody>
     <tr><td style="width: 70px;">工作</td>
     <td>赚钱的事情</td></tr>
