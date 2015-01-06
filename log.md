@@ -39,27 +39,26 @@ Pushing forward!
 
 <table style="margin-top:40px;">
   <tbody>
-    <tr><td style="width: 70px;">工作</td>
+    <tr><td style="width:70px;">工作</td>
     <td>赚钱的事情</td></tr>
-    <tr><td style="width: 70px;">学习</td>
-    <td>主要是学习工作中需要的技术</td></tr>
-    <tr><td style="width: 70px;">日常</td>
-    <td>吃饭、刷牙、洗脸、洗澡</td></tr>
-    <tr><td style="width: 70px;">卫生</td>
+    <tr><td style="width:70px;">学习</td>
+    <td>工作需要的技能和感兴趣的知识</td></tr>
+    <tr><td style="width:70px;">日常</td>
+    <td>吃饭、刷牙、洗脸洗澡以及缴电费</td></tr>
+    <tr><td style="width:70px;">卫生</td>
     <td>整理房间，扫地，洗衣服</td></tr>
-    <tr><td style="width: 70px;">购物</td>
-    <td>买东西</td></tr>
-    <tr><td style="width: 70px;">管理</td>
+    <tr><td style="width:70px;">购物</td><td>买东西
+    <tr><td style="width:70px;">管理</td>
     <td>一天计划、一天回顾以及日记</td></tr>
-    <tr><td style="width: 70px;">往来</td>
+    <tr><td style="width:70px;">往来</td>
     <td>接待家里来客，或去别人家做客</td></tr>
-    <tr><td style="width: 70px;">喝水</td>
+    <tr><td style="width:70px;">喝水</td>
     <td>记录饮水次数</td></tr>
-    <tr><td style="width: 70px;">睡觉</td>
+    <tr><td style="width:70px;">睡觉</td>
     <td>躺床上或趴着睡觉</td></tr>
-    <tr><td style="width: 70px;">娱乐</td>
+    <tr><td style="width:70px;">娱乐</td>
     <td>长时间的娱乐消遣活动，比如看电影、看书、和朋友打牌等等，偶尔为了休息浏览网页不算在内</td></tr>
-    <tr><td style="width: 70px;">交通</td>
+    <tr><td style="width:70px;">交通</td>
     <td>往返于路上的时间</td></tr>
   </tbody>
 </table>
