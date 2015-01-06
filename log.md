@@ -45,8 +45,8 @@ Pushing forward!
     <td>工作需要的技能和感兴趣的知识</td></tr>
     <tr><td style="width:70px;">日常</td>
     <td>吃饭、刷牙、洗脸洗澡以及缴电费</td></tr>
-    <tr><td style="width:70px;">卫生</td>
-    <td>整理房间，扫地，洗衣服</td></tr>
+    <tr><td style="width:70px;">保洁</td>
+    <td>整理房间，扫地，洗衣服，整理电脑文件</td></tr>
     <tr><td style="width:70px;">购物</td><td>买东西
     <tr><td style="width:70px;">管理</td>
     <td>一天计划、一天回顾以及日记</td></tr>
