@@ -94,7 +94,7 @@ $(document).on("click", '#submit', function(event){
     if ($('#belong').val().search(/^f!\s*|^父！\s*/ig) !== -1) {
         var task = '∈ ' + $('#belong').val().split(/^f!\s*|^父！\s*/ig).pop();
         $('#belong').val(task);
-    } else if ($('#belong').val().search(/^!\s*$|^！\s*$/g) !== -1) {
+    } else if ($('#belong').val().search(/^!\s*|^！\s*/g) !== -1) {
         $('#belong').val('');
     }
 });
