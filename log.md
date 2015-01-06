@@ -40,7 +40,7 @@ Pushing forward!
 <table style="margin-top:40px;">
   <tbody>
     <tr><td style="width:70px;">工作</td>
-    <td>赚钱的事情</td></tr>
+    <td>赚钱的事情以及毕业论文</td></tr>
     <tr><td style="width:70px;">学习</td>
     <td>工作需要的技能和感兴趣的知识</td></tr>
     <tr><td style="width:70px;">日常</td>
