@@ -6,7 +6,7 @@ script: /javascript/custom/time.js
 
 ---
 
-最近 5 件事上花了多少时间？
+在最近 5 件事上花费了多少时间？
 
 ---
 
