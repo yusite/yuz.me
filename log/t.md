@@ -14,14 +14,12 @@ script: /javascript/custom/time.js
   <thead>
     <tr>
       <th>名称</th>
-      <th>时长</th>
-      <th>开始时间</th>
-      <th>结束时间</th>
+      <th>工作时长</th>
+      <th>起止时间</th>
     </tr>
   </thead>
   <tbody id="time">
     <tr>
-      <td>Loading...</td>
       <td>Loading...</td>
       <td>Loading...</td>
       <td>Loading...</td>
