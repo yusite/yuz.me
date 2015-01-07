@@ -13,9 +13,9 @@ script: /javascript/custom/time.js
 <table>
   <thead>
     <tr>
-      <th>名称</th>
-      <th>工作时长</th>
-      <th>起止时间</th>
+      <th style="text-align:left;">名称</th>
+      <th style="text-align:left;">工作时长</th>
+      <th style="text-align:left;">起止时间</th>
     </tr>
   </thead>
   <tbody id="time">
