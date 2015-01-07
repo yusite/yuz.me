@@ -14,7 +14,7 @@ script: /javascript/custom/time.js
   <thead>
     <tr>
       <th style="text-align:left;">名称</th>
-      <th style="text-align:left;">工作时长</th>
+      <th style="text-align:left;">时长</th>
     </tr>
   </thead>
   <tbody id="time">
