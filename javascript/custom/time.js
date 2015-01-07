@@ -41,7 +41,6 @@
             output.push('<tr>');
             output.push('<td>' + dataArray[i].Name + '</td>');
             output.push('<td>' + getDuration(dataArray[i].Begin, dataArray[i].End) + '</td>');
-            output.push('<td>' + getTimeString(dataArray[i].Begin) + '~' + getTimeString(dataArray[i].End) + '</td>');
             output.push('</tr>');
         }
         return output.join("");

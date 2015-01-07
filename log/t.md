@@ -15,12 +15,10 @@ script: /javascript/custom/time.js
     <tr>
       <th style="text-align:left;">名称</th>
       <th style="text-align:left;">工作时长</th>
-      <th style="text-align:left;">起止时间</th>
     </tr>
   </thead>
   <tbody id="time">
     <tr>
-      <td>Loading...</td>
       <td>Loading...</td>
       <td>Loading...</td>
     </tr>
