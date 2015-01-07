@@ -45,9 +45,9 @@ Pushing forward!
   <tbody>
     <tr>
         <td style="width:64px;">工作</td>
-        <td style="width:270px;">赚钱的事情以及毕业论文</td>
+        <td style="width:250px;">赚钱的事情以及毕业论文</td>
         <td style="width:64px;">成长</td>
-        <td style="width:321px;">工作需要的技能和感兴趣的知识，以及写日记博客</td>
+        <td style="width:341px;">工作需要的技能和感兴趣的知识，以及写日记博客</td>
     </tr>
     <tr>
         <td>日常</td>
