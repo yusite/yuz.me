@@ -14,9 +14,9 @@ script: /javascript/custom/time.js
   <thead>
     <tr>
       <th>名称</th>
-      <th>开始</th>
-      <th>结束</th>
       <th>时长</th>
+      <th>开始时间</th>
+      <th>结束时间</th>
     </tr>
   </thead>
   <tbody id="time">

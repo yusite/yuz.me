@@ -40,9 +40,9 @@
         for (i = 0; i < dataArray.length; i++) {
             output.push('<tr>');
             output.push('<td>' + dataArray[i].Name + '</td>');
+            output.push('<td>' + getDuration(dataArray[i].Begin, dataArray[i].End) + '</td>');
             output.push('<td>' + getTimeString(dataArray[i].Begin) + '</td>');
             output.push('<td>' + getTimeString(dataArray[i].End) + '</td>');
-            output.push('<td>' + getDuration(dataArray[i].Begin, dataArray[i].End) + '</td>');
             output.push('</tr>');
         }
         return output.join("");
