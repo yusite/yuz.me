@@ -43,42 +43,11 @@ Pushing forward!
 
 <table style="margin-top:40px;">
   <tbody>
-    <tr>
-        <td style="width:69px;">工作</td>
-        <td style="width:245px;">赚钱的事情以及毕业论文</td>
-        <td style="width:69px;">成长</td>
-        <td style="width:336px;">工作需要的技能和感兴趣的知识，以及写日记博客</td>
-    </tr>
-    <tr>
-        <td>日常</td>
-        <td>吃饭、刷牙、洗脸洗澡以及缴电费</td>
-        <td>保洁</td>
-        <td>整理房间，扫地，洗衣服，整理电脑文件</td>
-    </tr>
-    <tr>
-        <td>购物</td>
-        <td>买东西</td>
-        <td>管理</td>
-        <td>一天计划、一天回顾以及日记</td>
-    </tr>
-    <tr>
-        <td>往来</td>
-        <td>接待家里来客，或去别人家做客</td>
-        <td>喝水</td>
-        <td>记录饮水次数</td>
-    </tr>
-    <tr>
-        <td>睡觉</td>
-        <td>躺床上或趴着睡觉</td>
-        <td>娱乐</td>
-        <td>长时间的娱乐消遣活动，比如看电影、看书、和朋友打牌等等，偶尔为了休息浏览网页不算在内</td>
-    </tr>
-    <tr>
-        <td>交通</td>
-        <td>往返于路上的时间</td>
-        <td>运动</td>
-        <td>室内和室外，散步不算</td>
-    </tr>
+    <tr><td>工作</td><td>成长</td><td>保洁</td></tr>
+    <tr><td>运动</td><td>日常</td><td>购物</td></tr>
+    <tr><td>管理</td><td>思考</td><td>往来</td></tr>
+    <tr><td>休息</td><td>睡觉</td><td>娱乐</td></tr>
+    <tr><td>专注</td><td>喝水</td><td>其它</td></tr>
   </tbody>
 </table>
 
