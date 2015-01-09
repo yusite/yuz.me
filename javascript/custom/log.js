@@ -10,7 +10,7 @@ function setDuration(jsonarray) {
         var duration = Math.round(durationInMs / 1000);
         var h = Math.floor(duration / 3600);
         var m = Math.floor((duration - h * 3600) / 60);
-        var time = ((h === 0) ? "" : h + "h") + m + "m";
+        var time = ((h === 0) ? "" : h + "h") + ':' + m + "m";
         var id = '#duration-' + i;
         $(id).html(time);
     }
