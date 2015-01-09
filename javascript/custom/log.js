@@ -91,6 +91,7 @@ $.getJSON(displayUrl).done(function(data) {
 
 $(document).on("click", '#submit', function(event){
     event.preventDefault();
+    clearInterval(timer);
     var command = [];
     command.push(google);
     command.push('?');
@@ -109,6 +110,11 @@ $(document).on("click", '#submit', function(event){
         content = outputLocation(data.place);
         $('#place').html(content);
         $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
+        var timer = setInterval(function(){
+            if (data.stime) {
+                setDuration(data.stime);
+            }
+        }, 1000);
     });
 
     $('#send').html('<span style="color:red;">Sending...</span>');
