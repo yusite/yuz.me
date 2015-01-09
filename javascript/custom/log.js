@@ -36,7 +36,7 @@ var outputDoing = function(jsonarray) {
             output.push(middot);
             output.push('<button class="father" ' + style + '>FA</button>');
         }
-        output.push('&nbsp;&nbsp;<span id="duration-' + i + '"></span><br>');
+        output.push('&nbsp;-&nbsp;<span style="font-size:18px;" id="duration-' + i + '"></span><br>');
         output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
         output.push('</div>');
     }
