@@ -28,7 +28,7 @@ var outputDoing = function(jsonarray) {
         } else {
             output.push(jsonarray[i].Name);
         }
-        output.push('</span>&nbsp;&nbsp;');
+        output.push('</span><br>');
         output.push('( <button class="repeat" ' + style + '>RE</button>');
         output.push(middot);
         output.push('<button class="done" ' + style + '>DONE</button>');
