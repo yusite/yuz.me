@@ -6,10 +6,10 @@ function twoDigits(n) {
     return n > 9 ? "" + n: "0" + n;
 }
 
-function setDuration(timeArray) {
+function setDuration(jsonarray) {
     var i;
-    for (i = 0; i < timeArray.length; i++) {
-        var d = new Date(timeArray[i]);
+    for (i = 0; i < jsonarray.length; i++) {
+        var d = new Date(jsonarray[i].Begin);
         var durationInMs = Date.now() - d.getTime();
         var duration = Math.round(durationInMs / 1000);
         var h = Math.floor(duration / 3600);
@@ -27,18 +27,20 @@ var outputDoing = function(jsonarray) {
     for (i = 0; i < jsonarray.length; i++) {
         output.push('<div>');
         output.push('<span class="taskName">');
-        output.push(jsonarray[i]);
+        if (jsonarray[i].Summary) {
+            output.push(jsonarray[i].Name + ', ' + jsonarray[i].Summary);
+        } else {
+            output.push(jsonarray[i].Name);
+        }
         output.push('</span>&nbsp;&nbsp;');
         output.push('( <button class="repeat" ' + style + '>RE</button>');
         output.push(middot);
         output.push('<button class="done" ' + style + '>DONE</button>');
-
-        if (jsonarray[i].indexOf("∈") === -1) {
+        if (jsonarray[i].Summary.indexOf("∈") === -1) {
             output.push(middot);
             output.push('<button class="father" ' + style + '>FA</button>');
         }
-
-        output.push(') <span id="duration-' + i + '">--:--:--</span><br>');
+        output.push(' )&nbsp;&nbsp;<span id="duration-' + i + '">--:--:--</span><br>');
         output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
         output.push('</div>');
     }
@@ -82,10 +84,10 @@ $.getJSON(displayUrl).done(function(data) {
     content = outputLocation(data.place);
     $('#place').html(content);
     timer = setInterval(function(){
-        if (data.stime) {
-            setDuration(data.stime);
+        if (data.doing) {
+            setDuration(data.doing);
         }
-    }, 30000);
+    }, 10000);
 });
 
 $(document).on("click", '#submit', function(event){
@@ -110,10 +112,10 @@ $(document).on("click", '#submit', function(event){
         $('#place').html(content);
         $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
         timer = setInterval(function(){
-            if (data.stime) {
-                setDuration(data.stime);
+            if (data.doing) {
+                setDuration(data.doing);
             }
-        }, 30000);
+        }, 10000);
     });
 
     $('#send').html('<span style="color:red;">Sending...</span>');
