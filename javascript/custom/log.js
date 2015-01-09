@@ -1,6 +1,25 @@
 var google = "https://script.google.com/macros/s/AKfycbz6oLGBd7N1rNmxcOzClQ0SWHyAd8z37bXTeAy9UkmMmj6MzD4/exec";
 var displayUrl = google + "?display=?";
 
+function twoDigits(n) {
+    return n > 9 ? "" + n: "0" + n;
+}
+
+function setDuration(timeArray) {
+    var i;
+    for (i = 0; i < timeArray.length; i++) {
+        var d = new Date(timeArray[i]);
+        var durationInMs = Date.now() - d.getTime();
+        var duration = Math.round(durationInMs / 1000);
+        var h = Math.floor(duration / 3600);
+        var m = Math.floor((duration - h * 3600) / 60);
+        var s = duration - h * 3600 - m * 60;
+        var time = twoDigits(h) + ":" + twoDigits(m) + ":" + twoDigits(s);
+        var id = '#duration-' + i;
+        $(id).html(time);
+    }
+}
+
 var outputDoing = function(jsonarray) {
     var i, output = [];
     var style = 'style="font-size:18px;border:0;background:none;color:#268bd2;padding:0;"';
@@ -20,7 +39,7 @@ var outputDoing = function(jsonarray) {
         }
 
         output.push(' )');
-        output.push('<br>');
+        output.push('<br><span id="duration-' + i + '">00:00:00</span><br>');
         output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
         output.push('</div>');
     }
@@ -63,6 +82,11 @@ $.getJSON(displayUrl).done(function(data) {
     $("#recent").html(content);
     content = outputLocation(data.place);
     $('#place').html(content);
+    var timer = setInterval(function(){
+        if (data.stime) {
+            setDuration(data.stime);
+        }
+    }, 1000);
 });
 
 $(document).on("click", '#submit', function(event){
