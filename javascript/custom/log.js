@@ -29,14 +29,14 @@ var outputDoing = function(jsonarray) {
             output.push(jsonarray[i].Name);
         }
         output.push('</span><br>');
-        output.push('( <button class="repeat" ' + style + '>RE</button>');
+        output.push('<button class="repeat" ' + style + '>RE</button>');
         output.push(middot);
         output.push('<button class="done" ' + style + '>DONE</button>');
         if (jsonarray[i].Summary.indexOf("∈") === -1) {
             output.push(middot);
             output.push('<button class="father" ' + style + '>FA</button>');
         }
-        output.push(' )&nbsp;&nbsp;<span id="duration-' + i + '"></span><br>');
+        output.push('&nbsp;&nbsp;<span id="duration-' + i + '"></span><br>');
         output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
         output.push('</div>');
     }
