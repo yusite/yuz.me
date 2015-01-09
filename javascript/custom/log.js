@@ -1,5 +1,6 @@
 var google = "https://script.google.com/macros/s/AKfycbz6oLGBd7N1rNmxcOzClQ0SWHyAd8z37bXTeAy9UkmMmj6MzD4/exec";
 var displayUrl = google + "?display=?";
+var timer;
 
 function twoDigits(n) {
     return n > 9 ? "" + n: "0" + n;
@@ -13,8 +14,7 @@ function setDuration(timeArray) {
         var duration = Math.round(durationInMs / 1000);
         var h = Math.floor(duration / 3600);
         var m = Math.floor((duration - h * 3600) / 60);
-        var s = duration - h * 3600 - m * 60;
-        var time = twoDigits(h) + ":" + twoDigits(m) + ":" + twoDigits(s);
+        var time = twoDigits(h) + ":" + twoDigits(m);
         var id = '#duration-' + i;
         $(id).html(time);
     }
@@ -38,8 +38,7 @@ var outputDoing = function(jsonarray) {
             output.push('<button class="father" ' + style + '>FA</button>');
         }
 
-        output.push(' )');
-        output.push('<br><span id="duration-' + i + '">00:00:00</span><br>');
+        output.push(') <span id="duration-' + i + '">--:--:--</span><br>');
         output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
         output.push('</div>');
     }
@@ -82,11 +81,11 @@ $.getJSON(displayUrl).done(function(data) {
     $("#recent").html(content);
     content = outputLocation(data.place);
     $('#place').html(content);
-    var timer = setInterval(function(){
+    timer = setInterval(function(){
         if (data.stime) {
             setDuration(data.stime);
         }
-    }, 1000);
+    }, 30000);
 });
 
 $(document).on("click", '#submit', function(event){
@@ -110,11 +109,11 @@ $(document).on("click", '#submit', function(event){
         content = outputLocation(data.place);
         $('#place').html(content);
         $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
-        var timer = setInterval(function(){
+        timer = setInterval(function(){
             if (data.stime) {
                 setDuration(data.stime);
             }
-        }, 1000);
+        }, 30000);
     });
 
     $('#send').html('<span style="color:red;">Sending...</span>');
