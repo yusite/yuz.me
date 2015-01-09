@@ -2,10 +2,6 @@ var google = "https://script.google.com/macros/s/AKfycbz6oLGBd7N1rNmxcOzClQ0SWHy
 var displayUrl = google + "?display=?";
 var timer;
 
-function twoDigits(n) {
-    return n > 9 ? "" + n: "0" + n;
-}
-
 function setDuration(jsonarray) {
     var i;
     for (i = 0; i < jsonarray.length; i++) {
@@ -14,7 +10,7 @@ function setDuration(jsonarray) {
         var duration = Math.round(durationInMs / 1000);
         var h = Math.floor(duration / 3600);
         var m = Math.floor((duration - h * 3600) / 60);
-        var time = h + "h" + twoDigits(m) + "m";
+        var time = ((h === 0) ? "" : h + "h") + m + "m";
         var id = '#duration-' + i;
         $(id).html(time);
     }
@@ -40,7 +36,7 @@ var outputDoing = function(jsonarray) {
             output.push(middot);
             output.push('<button class="father" ' + style + '>FA</button>');
         }
-        output.push(' )&nbsp;&nbsp;<span id="duration-' + i + '">--:--:--</span><br>');
+        output.push(' )&nbsp;&nbsp;<span id="duration-' + i + '"></span><br>');
         output.push('<textarea name="summary" rows="2" style="font-size:18px;"></textarea>');
         output.push('</div>');
     }
@@ -76,6 +72,9 @@ $.getJSON(displayUrl).done(function(data) {
     var content = outputDoing(data.doing);
     if (content) {
         $('#doing').html(content);
+        timer = setInterval(function(){
+            setDuration(data.doing);
+        }, 10000);
     } else {
         $('#doing').html('无任务');
     }
@@ -83,16 +82,13 @@ $.getJSON(displayUrl).done(function(data) {
     $("#recent").html(content);
     content = outputLocation(data.place);
     $('#place').html(content);
-    timer = setInterval(function(){
-        if (data.doing) {
-            setDuration(data.doing);
-        }
-    }, 10000);
 });
 
 $(document).on("click", '#submit', function(event){
     event.preventDefault();
-    clearInterval(timer);
+    if (timer) {
+        clearInterval(timer);
+    }
     var command = [];
     command.push(google);
     command.push('?');
@@ -103,6 +99,9 @@ $(document).on("click", '#submit', function(event){
         var content = outputDoing(data.doing);
         if (content) {
             $('#doing').html(content);
+            timer = setInterval(function(){
+                setDuration(data.doing);
+            }, 10000);
         } else {
             $('#doing').html('无任务');
         }
@@ -111,11 +110,7 @@ $(document).on("click", '#submit', function(event){
         content = outputLocation(data.place);
         $('#place').html(content);
         $('#send').html('<input type="submit" value="Submit" id="submit" style="font-size:18px;">');
-        timer = setInterval(function(){
-            if (data.doing) {
-                setDuration(data.doing);
-            }
-        }, 10000);
+
     });
 
     $('#send').html('<span style="color:red;">Sending...</span>');
