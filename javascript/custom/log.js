@@ -22,12 +22,11 @@ var outputDoing = function(jsonarray) {
     var middot = ' &middot; ';
     for (i = 0; i < jsonarray.length; i++) {
         output.push('<div>');
-        output.push('<span class="taskName">');
+        output.push('<span class="taskName">' + jsonarray[i].Name + '</span>');
         if (jsonarray[i].Summary) {
-            output.push(jsonarray[i].Name + '</span>, ' + jsonarray[i].Summary + '<br>');
+            output.push(', <span class="taskSummary">' + jsonarray[i].Summary + '</span><br>');
         } else {
-            output.push(jsonarray[i].Name);
-            output.push('</span><br>');
+            output.push('<br>');
         }
         output.push('<button class="repeat" ' + style + '>RE</button>');
         output.push(middot);
