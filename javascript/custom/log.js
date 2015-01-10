@@ -129,12 +129,14 @@ $(document).on("click", 'button.done', function(event){
     var nameValue = $(this).parent().find(".taskName").text();
     if (textarea.val()) {
         textarea.val('');
-        if (nameValue.split(', ∈').shift() == $('#create').val()) {
+        // 在 clear 时，如果任务名字 == 新建任务
+        if (nameValue == $('#create').val()) {
             $('#belong').val('');
             $('#create').val('');
         }
     } else {
         textarea.val('✓');
+        // 在 done 时，如果结束的任务是当前的父任务
         if ('∈ ' + nameValue == $('#belong').val()) {
             $('#belong').val('');
             $('#create').val('');
@@ -165,17 +167,16 @@ $(document).on("click", 'button.father', function(event){
 $(document).on("click", 'button.repeat', function(event){
     event.preventDefault();
     var parent = $(this).parent();
-    var nameValue = parent.find(".taskName").text();
     var text = parent.find("textarea");
     var button = parent.find("button.done");
     if (!text.val()) {
         text.val('✓');
         button.text('CLEAR');
     }
-    var taskArray = nameValue.split(', ∈');
-    var taskName = taskArray.shift();
-    var belong = taskArray[0];
-    $('#create').val(taskName);
+    var nameValue = parent.find(".taskName").text();
+    var summaryValue = parent.find(".taskSummary").text();
+    var belong = summaryValue.split("∈").pop();
+    $('#create').val(nameValue);
     if (belong) {
         belong = '∈' + belong;
         $('#belong').val(belong);
