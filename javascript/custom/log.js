@@ -24,11 +24,11 @@ var outputDoing = function(jsonarray) {
         output.push('<div>');
         output.push('<span class="taskName">');
         if (jsonarray[i].Summary) {
-            output.push(jsonarray[i].Name + ', ' + jsonarray[i].Summary);
+            output.push(jsonarray[i].Name + '</span>, ' + jsonarray[i].Summary + '<br>');
         } else {
             output.push(jsonarray[i].Name);
+            output.push('</span><br>');
         }
-        output.push('</span><br>');
         output.push('<button class="repeat" ' + style + '>RE</button>');
         output.push(middot);
         output.push('<button class="done" ' + style + '>DONE</button>');
