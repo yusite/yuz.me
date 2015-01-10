@@ -175,11 +175,9 @@ $(document).on("click", 'button.repeat', function(event){
     }
     var nameValue = parent.find(".taskName").text();
     var summaryValue = parent.find(".taskSummary").text();
-    var belong = summaryValue.split("∈").pop();
     $('#create').val(nameValue);
-    if (belong) {
-        belong = '∈' + belong;
-        $('#belong').val(belong);
+    if (summaryValue) {
+        $('#belong').val(summaryValue);
     } else {
         $('#belong').val('');
     }
