@@ -33,7 +33,9 @@
         var id = $(this).attr("class");
         $("#" + id).hide();
         var hide = $("#" + id + " td:first-child").text();
-        var hideUrl = google + "?hide=" + hide;
-        $.getJSON(hideUrl);
+        var hideUrl = google + "?hide=" + hide + "&prefix=?";
+        $.getJSON(hideUrl).done(function(data) {
+            // console.log(data);
+        });
     });
 })();
