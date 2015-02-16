@@ -32,8 +32,8 @@
         event.preventDefault();
         var id = $(this).attr("class");
         $("#" + id).hide();
-        var name = $("#" + id + " td:first-child").text();
-        var hideUrl = google + "?hide=" + name;
+        var hide = $("#" + id + " td:first-child").text();
+        var hideUrl = google + "?hide=" + hide;
         $.getJSON(hideUrl);
     });
 })();
