@@ -48,7 +48,7 @@
             output.push('<h2><a href="http://yuz.me/i/">←</a> ' + tag + '要注意：</h2>');
             output.push("<ul>");
             for (i=0;i<array.length;i++) {
-                output.push('<li>' + array[i] + ' <a href="hide">(Hide)</a></li>');
+                output.push('<li>' + array[i] + ' <a href="hide">(Hide)</a> <a href="dump">(Dump)</a></li>');
             }
             output.push("</ul>");
         }
@@ -63,7 +63,6 @@
         var google = "https://script.google.com/macros/s/AKfycbyvHEYD-p-XQ8rlwzDIsamFMTnfus0inzm3IRsHNOZ37P3xYjkO/exec";
         var hideUrl = google + "?tag=" + tag + "&prefix=?";
         $.getJSON(hideUrl).done(function(data) {
-            console.log(data);
             var content = createOutput(data);
             var idName = "info";
             document.getElementById(idName).innerHTML = content;
@@ -74,5 +73,18 @@
     $(document).on("click", 'a[href="hide"]', function( event ){
         event.preventDefault();
         var item = $(this).parent().slideUp();
+    });
+
+    // dump text
+    $(document).on("click", 'a[href="dump"]', function( event ){
+        event.preventDefault();
+        var item = $(this).parent();
+        var i = item.text().split(" (H");
+        var sub = i[0];
+        item.slideUp();
+        var google = "https://script.google.com/macros/s/AKfycbyvHEYD-p-XQ8rlwzDIsamFMTnfus0inzm3IRsHNOZ37P3xYjkO/exec";
+        var hideUrl = google + "?hide=" + sub + "&prefix=?";
+        $.getJSON(hideUrl).done(function(data) {
+        });
     });
 })();
