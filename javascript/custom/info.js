@@ -16,6 +16,24 @@
     var createOutput = function( object ) {
         var output = [];
         var array = [], i;
+        if (object.Names) {
+            array = object.Names;
+            output.push('<h2><a href="http://yuz.me/i/">←</a> ' + tag + '要注意：</h2>');
+            output.push("<ul>");
+            for (i=0;i<array.length;i++) {
+                output.push('<li>' + array[i] + ' <a href="hide">(Hide)</a> <a href="dump">(Dump)</a></li>');
+            }
+            output.push("</ul>");
+        }
+        if (object.Notices) {
+            array = object.Notices;
+            output.push("<h2>注意事项</h2>");
+            output.push('<ul>');
+            for (i=0;i<array.length;i++) {
+                output.push('<li><a href="show">' + array[i] + '</a></li>');
+            }
+            output.push('</ul>');
+        }
         if (object.Forms) {
             array = object.Forms;
             output.push('<h2>添加</h2>');
@@ -33,24 +51,6 @@
                 output.push('<li><a href="' + array[i].published + '">' + array[i].name + '</a></li>');
             }
             output.push('</ul>');
-        }
-        if (object.Notices) {
-            array = object.Notices;
-            output.push("<h2>注意事项</h2>");
-            output.push('<ul>');
-            for (i=0;i<array.length;i++) {
-                output.push('<li><a href="show">' + array[i] + '</a></li>');
-            }
-            output.push('</ul>');
-        }
-        if (object.Names) {
-            array = object.Names;
-            output.push('<h2><a href="http://yuz.me/i/">←</a> ' + tag + '要注意：</h2>');
-            output.push("<ul>");
-            for (i=0;i<array.length;i++) {
-                output.push('<li>' + array[i] + ' <a href="hide">(Hide)</a> <a href="dump">(Dump)</a></li>');
-            }
-            output.push("</ul>");
         }
         return output.join('');
     };
